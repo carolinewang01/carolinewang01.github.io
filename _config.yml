@@ -86,7 +86,7 @@ author:
   location         : "Austin, Texas"
   employer         :
   # pubmed           : ""
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F6Fb8Lm_mY2Yuj2q8aBS-lOGGb3l3W4DoKrtIbyI3yMa8kZcWiMqhRH-0xhmutAO7FntPZXowtosv1fqdf5GbehtwP18A&user=Dr2oUPgAAAAJ"
   email            : "caroline.l.wang@utexas.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : ""
+  # twitter          : ""
   vine             :
   weibo            :
   xing             :
