@@ -1,6 +1,6 @@
 ---
 title: "Quantifying London Traffic Dynamics for Air Pollution Estimation" 
-excerpt: "Open-source library to automate collection of live traffic video data and extraction of descriptive traffic statistics. <br/><img src='/images/london_air_pollution.png' width = "200">"
+excerpt: "Open-source library to automate collection of live traffic video data and extraction of descriptive traffic statistics. <br/><img src='/images/london_air_pollution.png' width = "175">"
 collection: portfolio
 ---
 Better insight extraction from traffic data can aid the effort to understand/reduce air pollution, and allow dynamic traffic flow optimization. As of 2019, London traffic statistics (counts of vehicle types, stops, and starts) were often obtained through high-cost manual labor (i.e. individuals counting vehicles by the road) and were extrapolated to annual averages. Furthermore, they were not detailed enough to evaluate traffic/air pollution initiatives.
