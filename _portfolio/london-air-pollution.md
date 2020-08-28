@@ -13,4 +13,3 @@ Related:
 ------ 
 https://www.turing.ac.uk/research/research-projects/project-odysseus-understanding-london-busyness-and-exiting-lockdown
 https://www.forbes.com/sites/imperialinsights/2019/09/23/data-science-for-social-good/#5d8352db464b
-e
