@@ -18,8 +18,8 @@ main:
   - title: "Personal Ad"
     url: /personal-ad/
     
-  - title: "CV"
-    url: /cv/
+  # - title: "CV"
+    # url: /cv/
     
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+    # url: /markdown/
