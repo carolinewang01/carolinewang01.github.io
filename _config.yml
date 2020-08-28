@@ -40,7 +40,7 @@ staticman:
   path                   : "_data/comments/{options.slug}"
   requiredFields         : ['name', 'email', 'message']
   transforms:
-    email                : "caroline.l.wang [at] utexas [dot] edu"
+    email                : "caroline.l.wang@utexas.edu"
   generatedFields:
     date:
       type               : "date"
@@ -81,29 +81,29 @@ analytics:
 # Site Author
 author:
   name             : "About"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  avatar           : "profile.jpg"
+  bio              : "Caroline is currently a Ph.D. student at University of Texas at Austin."
   location         : "Austin, Texas"
   employer         :
-  pubmed           : ""
+  # pubmed           : ""
   googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            : "caroline.l.wang [at] utexas [dot] edu"
+  email            : "caroline.l.wang@utexas.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : 
   foursquare       :
-  github           : "https://github.com/carolinewang01"
+  github           : "carolinewang01"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "http://orcid.org/0000-0001-7207-7662"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -255,7 +255,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Chicago # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
