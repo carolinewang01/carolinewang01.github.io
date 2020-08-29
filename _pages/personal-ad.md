@@ -9,8 +9,8 @@ I'm a PhD student in the Department of Computer Science. My research interests a
 
 I would be interested in exploring the following:
 
-1) Neural Architecture Search with Reinforcement Learning
-2) Evolutionary computation (various topics) 
-3) Lifelong reinforcement learning
+- Neural Architecture Search with Reinforcement Learning
+- Evolutionary computation (various topics) 
+- Lifelong reinforcement learning
 
 Please email me at caroline.l.wang@utexas.edu if you're interested in collaborating! I haven't teamed up with anybody yet.
