@@ -2,8 +2,8 @@
 title: "The age of secrecy and unfairness in recidivism prediction"
 collection: publications
 permalink: /publication/2020-03-30-age-of-secrecy
-<!-- excerpt: 'Looking deeper into the COMPAS model (a black-box recidivism prediction model used widely in America's justice systems).' -->
-excerpt: 'testtesttesttesttest'
+excerpt: 'Looking deeper into the COMPAS model (a black-box recidivism prediction model used widely in America's justice systems).'
+<!-- excerpt: 'testtesttesttesttest' -->
 date: 2020-03-31
 venue: 'Harvard Data Science Review'
 paperurl: 'https://hdsr.mitpress.mit.edu/pub/7z10o269/release/3'
