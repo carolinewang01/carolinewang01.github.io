@@ -13,4 +13,4 @@ I would be interested in exploring the following:
 - Evolutionary computation (various topics) 
 - Lifelong reinforcement learning
 
-Please email me at caroline.l.wang@utexas.edu if you're interested in collaborating! I haven't teamed up with anybody yet.
+I have already found a partner.
