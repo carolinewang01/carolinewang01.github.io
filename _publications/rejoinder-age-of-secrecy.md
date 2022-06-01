@@ -1,7 +1,7 @@
 ---
 title: "Broader issues surrounding model transparency in criminal justice risk scoring"
 collection: publications
-permalink: /publication/2020-03-31-rejoinder-age-of-secrecy
+permalink: /publication/rejoinder-age-of-secrecy
 excerpt: 'A rejoinder to "The age of secrecy and unfairness in criminal recidivism prediction".'
 date: 2020-03-31
 venue: 'Harvard Data Science Review'
