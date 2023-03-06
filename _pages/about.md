@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 ------
-I'm currently a Ph.D. student at UT Austin in the Department of Computer Science. My current research interests are combining reinforcement learning and imitation learning, and multi-agent reinforcement learning.
+I'm currently a Computer Science Ph.D. student at UT Austin, supervised by Prof. Peter Stone. My research interests are decentralized cooperative multi-agent reinforcement learning, and leveraging demonstration knowledge to improve sample efficiency of reinforcement learning.
 
 
-Previously, I was an undergraduate student at Duke University, where I researched interpretable machine learning for criminal recidivism with Dr. Cynthia Rudin in the Prediction Analysis Lab. I also worked on applying machine learning methods from computer vision and natural language processing to real-world problems. 
+I received a B.S. in Mathematics and Computer Science from Duke University, where I researched interpretable machine learning methods for criminal recidivism prediction with Prof. Cynthia Rudin. We also analyzed the COMPAS recidivism prediction algorithm, showing that a nonlinear dependence on age was an alternative explanation for the previously observed racial bias of COMPAS. My work was recognized with a Goldwater Scholarship, a national-level undergraduate research award. 
