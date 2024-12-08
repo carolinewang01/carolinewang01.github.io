@@ -1,7 +1,8 @@
 ---
 title: "Quantifying London Traffic Dynamics for Air Pollution Estimation" 
+collection: projects
+permalink: /projects/london-air-traffic-dynamics
 excerpt: "Open-source library to automate collection of live traffic video data and extraction of descriptive traffic statistics. <br/><img src='/images/london_air_pollution.png'>"
-collection: portfolio
 ---
 Better insight extraction from traffic data can aid the effort to understand/reduce air pollution, and allow dynamic traffic flow optimization. As of 2019, London traffic statistics (counts of vehicle types, stops, and starts) were often obtained through high-cost manual labor (i.e. individuals counting vehicles by the road) and were extrapolated to annual averages. Furthermore, statistics were not detailed enough to evaluate traffic/air pollution initiatives.
 
@@ -9,7 +10,7 @@ This project was conducted during the 2019 Data Science for Social Good Fellowsh
 
 See the technical report and README on the [GitHub](https://github.com/dssg/air_pollution_estimation) for more details. Follow-ups to this project are currently being conducted by the Alan Turing Institute.  
 
-Related:
+<!-- Related:
 ------ 
 [https://www.turing.ac.uk/research/research-projects/project-odysseus-understanding-london-busyness-and-exiting-lockdown](https://www.turing.ac.uk/research/research-projects/project-odysseus-understanding-london-busyness-and-exiting-lockdown)
-[https://www.forbes.com/sites/imperialinsights/2019/09/23/data-science-for-social-good/#5d8352db464b](https://www.forbes.com/sites/imperialinsights/2019/09/23/data-science-for-social-good/#5d8352db464b)
+[https://www.forbes.com/sites/imperialinsights/2019/09/23/data-science-for-social-good/#5d8352db464b](https://www.forbes.com/sites/imperialinsights/2019/09/23/data-science-for-social-good/#5d8352db464b) -->

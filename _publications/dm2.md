@@ -1,15 +1,16 @@
 ---
 title: "DM$^2$: Distributed multi-agent reinforcement learning via distribution matching"
 collection: publications
-permalink: /publication/dm2
-excerpt: 'DM$^2$ allows a team of agents to perform cooperative tasks by independently imitating corresponding experts agents from a team of experts.'
-date: 2022-06-01
-venue: 'Preprint'
+permalink: /publications/dm2
+excerpt: 'TLDR: We propose DM$^2$, an algoritm that allows a team of agents to perform cooperative tasks by independently imitating corresponding experts agents from a team of experts.'
+date: 2023-02-14
+venue: 'AAAI'
 paperurl: ''
-citation: 'Caroline Wang, Ishan Durugkar, Elad Liebman, Peter Stone (2022). &quot;DM$^2$: Distributed multi-agent reinforcement learning via distribution matching&quot; <i>arXiv preprint</i>.'
+citation: 'Caroline Wang*, Ishan Durugkar*, Elad Liebman*, Peter Stone. &quot;DM$^2$: Distributed multi-agent reinforcement learning via distribution matching&quot; <i>AAAI 2023</i>.'
 ---
 
-[Download paper here](http://carolinewang01.github.io/files/dm2_full.pdf)
+<!-- [Download paper here](http://carolinewang01.github.io/files/dm2_aaai23.pdf) -->
+[Download paper here]({{"/files/dm2_aaai23.pdf" | relative_url}})
 
 Abstract:
 ======

@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Caroline Wang"
 title_separator          : "-"
 name                     : &name "Caroline Wang"
-description              : &description "Caroline is currently a Ph.D. student at University of Texas at Austin."
+description              : &description "Caroline Wang's personal website."
 url                      : https://carolinewang01.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "carolinewang01/carolinewang01.github.io"
@@ -81,8 +81,8 @@ analytics:
 # Site Author
 author:
   name             : "About"
-  avatar           : "profile.jpg"
-  bio              : "Caroline is currently a Ph.D. student at University of Texas at Austin."
+  avatar           : "profile-caroline.jpg"
+  bio              : "Caroline is a Ph.D. student at University of Texas at Austin, researching reinforcement learning, multi-agent systems, and ad hoc teamwork."
   location         : "Austin, Texas"
   employer         :
   # pubmed           : ""
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/carolinewang01/"
   orcid            : "http://orcid.org/0000-0001-7207-7662"
   pinterest        :
   soundcloud       :
@@ -121,6 +121,7 @@ author:
 include:
   - .htaccess
   - _pages
+  - _projects
   - files
 exclude:
   - "*.sublime-project"
@@ -181,7 +182,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  projects:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -227,10 +228,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _projects
   - scope:
       path: ""
-      type: portfolio
+      type: projects
     values:
       layout: single
       author_profile: true
