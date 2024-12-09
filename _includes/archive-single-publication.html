@@ -1,0 +1,63 @@
+<!-- Created by Caroline. Based off the _includes/archive-single.html -->
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<!-- Defines each publication-specific page. -->
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        <img src=
+          {% if teaser contains "://" %}
+            "{{ teaser }}"
+          {% else %}
+            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+          {% endif %}
+          alt="">
+      </div>
+    {% endif %}
+    
+    <!-- define title -->
+    <h2>
+      {{ title }} 
+    </h2>
+    
+    <!-- print recommended citation -->
+    {% if post.citation and post.paperurl %}
+      <p style="margin-bottom:0;">
+        <b>Recommended citation</b>: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a>
+      </p>
+    {% elsif post.citation %} 
+      <p style="margin-bottom:0;">
+        <b>Recommended citation</b>: {{ post.citation }} 
+      </p>
+    {% elsif post.paperurl %}
+      <p style="margin-bottom:0;">
+        Download <a href=" {{ post.paperurl }} "><u>paper</u></a>
+      </p>
+    {% endif %}
+
+    <!-- print excerpt -->
+    {% if post.excerpt and site.read_more != 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description" style="margin-bottom:0; padding-top:0;"> 
+      <b>TLDR</b>: {{ post.excerpt | markdownify }}
+    </p>
+    {% elsif post.excerpt and site.read_more == 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description" style="margin-bottom:0; padding-top:0;"><p>
+      <b>TLDR</b>: {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p>
+    </p>
+    {% endif %}
+    
+  </article>
+</div>

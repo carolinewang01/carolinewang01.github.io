@@ -6,10 +6,9 @@ excerpt: 'TLDR: We propose D-Shape, an RL+IL algorithm that allows learning from
 date: 2023-06-02
 venue: 'AAMAS'
 paperurl: ''
-citation: 'Caroline Wang, Garrett Warnell, Peter Stone (2023). &quot;D-Shape: Demonstration Shaped Reinforcement Learning&quot; <i>AAMAS 2023</i>.'
+citation: 'Caroline Wang, Garrett Warnell, Peter Stone (2023). &quot;D-Shape: Demonstration Shaped Reinforcement Learning.&quot; <i>AAMAS 2023</i>.'
 ---
-<!-- [Download paper here](http://carolinewang01.github.io/files/dshape_aamas23.pdf) -->
-[Download paper here]({{"/files/dshape_aamas23.pdf" | relative_url}})
+Download [paper]({{"/files/papers/dshape_aamas23.pdf" | relative_url}}), [slides]({{ "/files/slides/dshape_slides_aamas23.pdf" | relative_url }}).
 
 Abstract:
 ======

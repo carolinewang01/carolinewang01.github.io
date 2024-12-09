@@ -18,7 +18,7 @@ teaser                   :  # filename of teaser fallback teaser image placed in
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
+read_more                : "enabled" # "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -84,9 +84,9 @@ author:
   avatar           : "profile-caroline.jpg"
   bio              : "Caroline is a Ph.D. student at University of Texas at Austin, researching reinforcement learning, multi-agent systems, and ad hoc teamwork."
   location         : "Austin, Texas"
-  employer         :
+  employer         : "The University of Texas at Austin"
   # pubmed           : ""
-  googlescholar    : "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F6Fb8Lm_mY2Yuj2q8aBS-lOGGb3l3W4DoKrtIbyI3yMa8kZcWiMqhRH-0xhmutAO7FntPZXowtosv1fqdf5GbehtwP18A&user=Dr2oUPgAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=Dr2oUPgAAAAJ&hl=en"
   email            : "caroline.l.wang@utexas.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :

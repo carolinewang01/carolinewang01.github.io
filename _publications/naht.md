@@ -2,16 +2,13 @@
 title: "N-Agent Ad Hoc Teamwork"
 collection: publications
 permalink: /publications/naht
-excerpt: 'TLDR: Existing paradigms for multi-agent coordination are limited by assuming that either all agents are controlled (e.g. the typical cooperative MARL algorithm), or that only a single agent is controlled (ad hoc teamwork / zero shot coordination). We pose the N-Agent Ad Hoc Teamwork (NAHT) problem to the community, to lift these restrictions and pave the path towards more open multi-agent learning paradigms. '
+excerpt: 'Existing paradigms for multi-agent coordination are limited by assuming that either all agents are controlled (e.g. the typical cooperative MARL algorithm), or that only a single agent is controlled (ad hoc teamwork / zero shot coordination). We pose the N-Agent Ad Hoc Teamwork (NAHT) problem to the community, to lift these restrictions and pave the path towards more open multi-agent learning paradigms. '
 date: 2024-12-15
 venue: 'NeurIPS'
 paperurl: ''
-citation: 'Caroline Wang, Arrasy Rahman, Ishan Durugkar, Elad Liebman, Peter Stone. &quot;N-Agent Ad Hoc Teamwork (2024). &quot; <i>NeurIPS 2024</i>.'
+citation: 'Caroline Wang, Arrasy Rahman, Ishan Durugkar, Elad Liebman, Peter Stone. &quot;N-Agent Ad Hoc Teamwork.&quot; <i>NeurIPS 2024</i>.'
 ---
-<!-- [Download paper here](http://carolinewang01.github.io/files/naht_neurips24.pdf) -->
-[Download paper here]({{"/files/naht_neurips24.pdf" | relative_url}})
-
-
+Download [paper]({{ "/files/papers/naht_neurips24.pdf" | relative_url }}), [slides]({{ "/files/slides/naht_5min_neurips.pdf" | relative_url }}).
 
 Abstract:
 ======

@@ -2,16 +2,14 @@
 title: "The age of secrecy and unfairness in recidivism prediction"
 collection: publications
 permalink: /publications/age-of-secrecy
-excerpt: "TLDR: We investigate the COMPAS model (a black-box recidivism prediction model used widely in America's justice systems)."
+excerpt: "We investigate the COMPAS model---a black-box recidivism prediction model used widely in America's justice system."
 date: 2020-03-31
 venue: 'Harvard Data Science Review'
-paperurl: 'https://hdsr.mitpress.mit.edu/pub/7z10o269/release/3'
+paperurl: '' # 'https://hdsr.mitpress.mit.edu/pub/7z10o269/release/3'
 citation: 'Cynthia Rudin, Caroline Wang, and Beau Coker (2020). &quot;The age of secrecy and unfairness in recidivism prediction.&quot; <i>HDSR</i>. 2(1).'
 ---
 
-<!-- [Download paper here](http://carolinewang01.github.io/files/age_of_secrecy_hdsr_final.pdf) -->
-
-[Download paper here]({{"/files/age_of_secrecy_hdsr_final.pdf" | relative_url}})
+[Download paper here]({{"/files/papers/age_of_secrecy_hdsr_final.pdf" | relative_url}})
 
 Abstract:
 ======

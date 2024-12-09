@@ -1,16 +1,15 @@
 ---
 title: "Building Minimal and Reusable Causal State Abstractions for Reinforcement Learning"
 collection: publications
-permalink: /publications/dshape
-excerpt: 'TLDR: We introduce Causal Bisimulation Learning (CBM), a method that learns the causal relationships in the dynamics and reward functions for each task to derive a minimal,  task-specific abstraction.'
+permalink: /publications/cbm
+excerpt: 'We introduce Causal Bisimulation Learning (CBM), a method that learns the causal relationships in the dynamics and reward functions for each task to derive a minimal,  task-specific abstraction.'
 date: 2024-02-14
 venue: 'AAAI'
 paperurl: ''
-citation: 'Zizhao Wang*, Caroline Wang*, Xuesu Xiao, Yuke Zhu, Peter Stone (2024). &quot;Building Minimal and Reusable Causal State Abstractions for Reinforcement Learning&quot; <i>AAAI 2024</i>.'
+citation: 'Zizhao Wang*, Caroline Wang*, Xuesu Xiao, Yuke Zhu, Peter Stone (2024). &quot;Building Minimal and Reusable Causal State Abstractions for Reinforcement Learning.&quot;  <i>AAAI 2024</i>.'
 ---
-<!-- [Download paper here](http://carolinewang01.github.io/files/cbm_aaai24.pdf) -->
 
-[Download paper here]({{"/files/cbm_aaai24.pdf" | relative_url}})
+Download [paper]({{"/files/papers/cbm_aaai24.pdf" | relative_url}}), [slides]({{ "/files/slides/cbm_slides_aaai.pdf" | relative_url }}).
 
 Abstract:
 ======

@@ -1,5 +1,22 @@
 This personal website is based off of the Github Pages template for academic personal websites, forked from mmistakes/minimal-mistakes (https://academicpages.github.io template).
 
+## Todo List (Prioritized)
+<!-- 1. Update biography.  -->
+<!-- 2. Update publications.  -->
+<!-- 3. Fill out CV tab - add a hyperlink to a PDF of the CV -->
+<!-- 4. Reformat publications page to be prettier.
+  - Hyperlink to project page should be a 'learn more' tab. 
+  - Figure out how to remove title from page.  -->
+  - Fix spacing: couldn't quite figure out how to do this.
+  - Add bibtex for publications
+  <!-- - Add presentation materials  -->
+5. Add note about NAHT to bio!
+6. Improve the TLDR's for each publication.
+6. General Learning:
+  - Figure out purpose of `_data/authors.yml`. Do I need to fill it out? 
+  - Figure out purpose of the `markdown_generator` folder. 
+
+
 ## Installation
 To update the website, it is key to have a locally served copy. In 2024, I served the website locally (on my Dell XPS) via WSL 2.0, running Ubuntu 20.04, and using the VSCode WSL extension.
 
@@ -18,26 +35,7 @@ Build and serve your site locally with:
 `bundle exec jekyll serve`
 By default, the site will be available at http://127.0.0.1:4000.
 
-## Todo List (Prioritized)
-<!-- 1. Update biography.  -->
-<!-- 2. Update publications.  -->
-3. Fill out CV tab - add a hyperlink to a PDF of the CV
-4. Add note about NAHT to bio!
-5. Reformat publications page to be prettier.
-  - Hyperlink to project page should be a 'learn more' tab. 
-  - Figure out how to remove title from page. 
-  - Fix spacing
-  - Add bibtex for publications
-  - Add presentation materials 
-
-6. Figure out why projects page is not loading???
-6. General Learning:
-  - Figure out purpose of `_data/authors.yml`. Do I need to fill it out? 
-  - Figure out purpose of the `markdown_generator` folder. 
-
-
 ## Updating Existing Part of Website
-
 
 ### To update biography and profile picture: 
 Updating the profile picture: inside the `images` directory, replace `profile-caroline.png` by the desired photo. In order to change the photo name, inside `_config.yml`, modify the avatar sub-field under the `author` field in `_config.yml`.
@@ -53,6 +51,17 @@ Add project resources under `files/`.
 ## To Add Pre-Configured Tab: 
 Go to `_data/navigation.yml` and add a new key. Check that in `_config.yml`, the field `include` includes the desired directory. 
 Have not figured out how to add an altogether new type of tab. 
+
+## To Modify the Layout of a Page: 
+In the top of a markdown page, there should be a key called "layout". This will refer to a layout html file provided in the `_layouts` directory, which provides the overall formatting of the page (i.e. is there a side bar, header bar, etc.). 
+To modify this high-level layout, you will need to modify the layout file provided here, and any referenced layout files. 
+
+For example, to modify the formatting of the publications page, you will need to examine/modify the following files: 
+- `_layouts/publications.html`
+- `_includes/archive-single-publication.html`
+- `_layouts/single.html`
+- Markdown files within the `_publications/` directory.
+
 
 ## Notes about How Website Works
 - General instructions can be found in `markdown.md`. 
