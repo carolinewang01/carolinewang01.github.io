@@ -7,15 +7,11 @@ This personal website is based off of the Github Pages template for academic per
 <!-- 4. Reformat publications page to be prettier.
   - Hyperlink to project page should be a 'learn more' tab. 
   - Figure out how to remove title from page.  -->
-  - Fix spacing: couldn't quite figure out how to do this.
+  - Fix spacing:
   - Add bibtex for publications
   <!-- - Add presentation materials  -->
 5. Add note about NAHT to bio!
 6. Improve the TLDR's for each publication.
-6. General Learning:
-  - Figure out purpose of `_data/authors.yml`. Do I need to fill it out? 
-  - Figure out purpose of the `markdown_generator` folder. 
-
 
 ## Installation
 To update the website, it is key to have a locally served copy. In 2024, I served the website locally (on my Dell XPS) via WSL 2.0, running Ubuntu 20.04, and using the VSCode WSL extension.
