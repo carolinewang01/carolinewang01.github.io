@@ -32,7 +32,14 @@
     <h2>
       {{ title }} 
     </h2>
-    
+
+    <!-- print award and venue if award exists -->
+    {% if post.award %}
+      <p style="margin-bottom:0;">
+        <i>{{ post.award }}</i> at <i>{{ post.venue }}</i> {{ post.date | default: "1900-01-01" | date: "%Y" }}
+      </p>
+    {% endif %}
+
     <!-- print recommended citation -->
     {% if post.citation and post.paperurl %}
       <p style="margin-bottom:0;">
