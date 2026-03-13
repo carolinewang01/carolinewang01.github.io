@@ -33,37 +33,47 @@
       {{ title }} 
     </h2>
 
-    <!-- print award and venue if award exists -->
-    {% if post.award %}
+    <!-- print venue -->
+    {% if post.venue %}
       <p style="margin-bottom:0;">
-        <i>{{ post.award }}</i> at <i>{{ post.venue }}</i> {{ post.date | default: "1900-01-01" | date: "%Y" }}
-      </p>
-    {% endif %}
-
-    <!-- print recommended citation -->
-    {% if post.citation and post.paperurl %}
-      <p style="margin-bottom:0;">
-        <b>Recommended citation</b>: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a>
-      </p>
-    {% elsif post.citation %} 
-      <p style="margin-bottom:0;">
-        <b>Recommended citation</b>: {{ post.citation }} 
-      </p>
-    {% elsif post.paperurl %}
-      <p style="margin-bottom:0;">
-        Download <a href=" {{ post.paperurl }} "><u>paper</u></a>
+        <i>{{ post.venue }}</i> {{ post.date | default: "1900-01-01" | date: "%Y" }}
       </p>
     {% endif %}
 
     <!-- print excerpt -->
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description" style="margin-bottom:0; padding-top:0;"> 
-      <b>TLDR</b>: {{ post.excerpt | markdownify }}
+    <p class="archive__item-excerpt" itemprop="description" style="margin-bottom:10px; padding-top:0;"> 
+      <b>TLDR</b>: {{ post.excerpt | markdownify | strip_html }}
     </p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description" style="margin-bottom:0; padding-top:0;"><p>
-      <b>TLDR</b>: {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p>
+    <p class="archive__item-excerpt" itemprop="description" style="margin-bottom:10px; padding-top:0;">
+      <b>TLDR</b>: {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
     </p>
+    {% endif %}
+
+    <!-- Buttons row -->
+    <div style="margin-bottom: 15px; display: flex; flex-wrap: wrap; gap: 10px;">
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" class="btn btn--info">Paper Link</a>
+      {% endif %}
+      <a href="{{ base_path }}{{ post.url }}" class="btn btn--info">More Info</a>
+      {% if post.slides %}
+        <a href="{{ post.slides }}" class="btn btn--info">Slides</a>
+      {% endif %}
+      {% if post.award %}
+        {% if post.award contains "<a " %}
+          {{ post.award | replace: '<a ', '<a class="btn btn--info" ' }}
+        {% else %}
+          <span class="btn btn--info">{{ post.award }}</span>
+        {% endif %}
+      {% endif %}
+    </div>
+
+    <!-- print recommended citation -->
+    {% if post.citation %}
+      <p style="margin-bottom:0;">
+        <b>Recommended citation</b>: {{ post.citation }}
+      </p>
     {% endif %}
     
   </article>

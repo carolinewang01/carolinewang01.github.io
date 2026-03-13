@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "About"
-excerpt: "About me"
+title: "Caroline Wang"
+excerpt: "About Caroline"
 author_profile: true
 redirect_from: 
   - /about/

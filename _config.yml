@@ -80,11 +80,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "About"
+  name             : "Caroline Wang"
   avatar           : "profile-caroline.jpg"
   bio              : "Caroline is a Ph.D. student at University of Texas at Austin, researching reinforcement learning, multi-agent systems, and ad hoc teamwork."
   location         : "Austin, Texas"
-  employer         : "The University of Texas at Austin"
+  employer         : ""
   # pubmed           : ""
   googlescholar    : "https://scholar.google.com/citations?user=Dr2oUPgAAAAJ&hl=en"
   email            : "caroline.l.wang@utexas.edu"
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  # twitter          : ""
+  twitter          : "CarolineWang98"
   vine             :
   weibo            :
   xing             :

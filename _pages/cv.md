@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Find my full CV [here]({{"/files/Wang_CV_2024-12-8-24.pdf" | relative_url}}).
+Find my resume [here]({{"/files/Wang_Resume_2026.pdf" | relative_url}}).
 
 
 <!-- Education
