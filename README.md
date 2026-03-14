@@ -1,18 +1,5 @@
 This personal website is based off of the Github Pages template for academic personal websites, forked from mmistakes/minimal-mistakes (https://academicpages.github.io template).
 
-## Todo List (Prioritized)
-<!-- 1. Update biography.  -->
-<!-- 2. Update publications.  -->
-<!-- 3. Fill out CV tab - add a hyperlink to a PDF of the CV -->
-<!-- 4. Reformat publications page to be prettier.
-  - Hyperlink to project page should be a 'learn more' tab. 
-  - Figure out how to remove title from page.  -->
-  - Fix spacing:
-  - Add bibtex for publications
-  <!-- - Add presentation materials  -->
-5. Add note about NAHT to bio!
-6. Improve the TLDR's for each publication.
-
 ## Installation
 To update the website, it is key to have a locally served copy. In 2024, I served the website locally (on my Dell XPS) via WSL 2.0, running Ubuntu 20.04, and using the VSCode WSL extension.
 

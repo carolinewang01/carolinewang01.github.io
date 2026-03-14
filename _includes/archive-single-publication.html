@@ -38,12 +38,20 @@
     <!-- Buttons row -->
     <div style="margin-bottom: 15px; display: flex; flex-wrap: wrap; gap: 10px;">
       {% if post.paperurl %}
-        <a href="{{ post.paperurl }}" class="btn btn--info">Paper Link</a>
+        <a href="{{ post.paperurl }}" class="btn btn--info">Link</a>
+      {% endif %}
+      {% if post.pdfurl %}
+        <a href="{% if post.pdfurl contains '://' %}{{ post.pdfurl }}{% else %}{{ base_path }}{{ post.pdfurl }}{% endif %}" class="btn btn--info">Paper PDF</a>
+      {% endif %}
+      {% if post.code %}
+        <a href="{{ post.code }}" class="btn btn--info">Code</a>
+      {% endif %}
+      {% if post.website %}
+        <a href="{{ post.website }}" class="btn btn--info">Website</a>
       {% endif %}
       {% if post.slides %}
         <a href="{{ post.slides }}" class="btn btn--info">Slides</a>
       {% endif %}
-      <a href="{{ base_path }}{{ post.url }}" class="btn btn--info">More Info</a>
       {% if post.award %}
         {% if post.award contains "<a " %}
           {{ post.award | replace: '<a ', '<a class="btn btn--success" ' }}
@@ -72,6 +80,36 @@
       <p style="margin-bottom:0;">
         <b>Citation</b>: {{ post.citation }}
       </p>
+    {% endif %}
+
+    {% if post.abstract %}
+      <div class="abstract-container" style="margin-top: 10px;">
+        <span class="abstract-toggle" 
+              style="cursor: pointer; font-weight: bold; color: #52adc8; display: inline-flex; align-items: center; user-select: none;" 
+              onclick="
+                var content = this.nextElementSibling;
+                var icon = this.querySelector('.toggle-icon');
+                if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                  content.style.maxHeight = '0px';
+                  content.style.opacity = '0';
+                  content.style.paddingTop = '0';
+                  icon.style.transform = 'rotate(0deg)';
+                } else {
+                  content.style.maxHeight = content.scrollHeight + 50 + 'px';
+                  content.style.opacity = '1';
+                  content.style.paddingTop = '10px';
+                  icon.style.transform = 'rotate(90deg)';
+                }
+              ">
+          <span class="toggle-icon" style="display: inline-block; margin-right: 5px; transition: transform 0.3s ease; font-size: 0.8em;">&#9654;</span>
+          Abstract
+        </span>
+        <div class="abstract-content" style="max-height: 0px; opacity: 0; overflow: hidden; transition: all 0.3s ease; padding-top: 0;">
+          <blockquote style="margin: 0; font-size: 0.9em;">
+            {{ post.abstract | markdownify }}
+          </blockquote>
+        </div>
+      </div>
     {% endif %}
     
   </article>

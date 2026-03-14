@@ -10,16 +10,13 @@ redirect_from:
 
 ------
 
-I am a 5th year Ph.D. student in the Computer Science Department at UT Austin, supervised by Prof. Peter Stone. I am fortunate to be a current student researcher at Google DeepMind in Montreal, and to have previously interned at Sony AI. 
-My PhD work is focused on understanding cooperative dynamics in multi-agent reinforcement learning settings, and on designing algorithms to enable artificial agents to coordinate with previously unseen agents such as humans---a problem known as ad hoc teamwork. 
+**I am currently on the job market for industry research scientist roles---feel free to reach out!**
 
-My work in multi-agent reinforcement learning is grounded by a broad set of general research interests. In no particular order, I'm interested in:
+I am a final year Computer Science Ph.D. student at UT Austin, supervised by 
+[Peter Stone](https://www.cs.utexas.edu/~pstone/). I am fortunate to have previously interned at Google DeepMind, where I was hosted by [Pablo S. Castro](https://psc-g.github.io/), and at Sony AI, where I was hosted by [Varun Kompella](https://varunrajk.gitlab.io/). 
+I'm currently motivated by a vision of AI agents that can work alongside humans---contributing to and benefiting from the collective knowledge and effort that drives human progress, unlocking new forms of collaboration that neither humans nor AI could achieve alone, and ensuring that such collaboration is steered by shared values. 
 
-- Understanding the principles of learning for both individuals and groups of agents, especially those necessary for cooperation, and those that result in emergent abilities in rich multi-agent systems.
-- Understanding necessary and sufficient conditions for generalist agents that operate within a rich, multi-agent world, rather than superhuman single-task solvers. 
+My PhD work pursues the above vision through the lens of multi-agent reinforcement learning: understanding cooperative dynamics in multi-agent settings, and designing algorithms to enable agents to coordinate with previously unseen teammates towards shared goals (ad hoc teamwork). 
+More broadly, I'm interested in the principles of learning necessary for cooperation, generalization, and emergent abilities in rich multi-agent systems, including continual learning and agents learning from other agents.
 
-As such, in addition to multi-agent reinforcement learning and ad hoc teamwork, I'm interested in generalization, continual learning, and agents learning from other agents.  
-
-<!-- I am interested in how artificial agents might learn to coordinate with unseen agents---a problem known as ad hoc teamwork. My other research interests include decentralized cooperative multi-agent reinforcement learning, leveraging demonstration knowledge to improve sample efficiency of reinforcement learning, and representation learning for reinforcement learning.  -->
-
-I received a B.S. in Mathematics and Computer Science from Duke University, where I researched interpretable machine learning methods for criminal recidivism prediction with Prof. Cynthia Rudin. We also analyzed the COMPAS recidivism prediction algorithm, showing that a nonlinear dependence on age was an alternative explanation for the previously observed racial bias of COMPAS. My work was recognized with a Goldwater Scholarship, a premier national undergraduate research award.
+I received a B.S. in Mathematics and Computer Science from Duke University, where I researched interpretable machine learning methods for criminal recidivism prediction with [Cynthia Rudin](https://users.cs.duke.edu/~cynthia/home.html), including an analysis of the COMPAS algorithm that offered an alternative explanation for its previously observed racial bias. My work was recognized with a Goldwater Scholarship, a premier undergraduate research award in the United States.
