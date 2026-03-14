@@ -5,10 +5,21 @@ permalink: /publications/naht
 excerpt: 'Existing paradigms for multi-agent coordination are limited by assuming that either all agents are controlled (e.g. the typical cooperative MARL algorithm), or that only a single agent is controlled (ad hoc teamwork / zero shot coordination). We pose the N-Agent Ad Hoc Teamwork (NAHT) problem to the community, to lift these restrictions and pave the path towards more open multi-agent learning paradigms. '
 date: 2024-12-15
 venue: 'NeurIPS'
-paperurl: ''
+paperurl: 'https://proceedings.neurips.cc/paper_files/paper/2024/hash/cabf611498431ad89a85ace75f790d93-Abstract-Conference.html'
 citation: 'Caroline Wang, Arrasy Rahman, Ishan Durugkar, Elad Liebman, Peter Stone. &quot;N-Agent Ad Hoc Teamwork.&quot; <i>NeurIPS 2024</i>.'
+slides: '/files/slides/naht_5min_neurips.pdf'
+bibtex: |-
+  @inproceedings{wang2024naht,
+    title = {N-Agent Ad Hoc Teamwork},
+    booktitle = {Advances in {{Neural Information Processing Systems}}},
+    author = {Wang, Caroline and Rahman, Muhammad Arrasy and Durugkar, Ishan and Liebman, Elad and Stone, Peter},
+    year = 2024,
+    month = dec,
+    volume = {37},
+    pages = {111832--111862}
+  }
 ---
-Download [paper]({{ "/files/papers/naht_neurips24.pdf" | relative_url }}), [slides]({{ "/files/slides/naht_5min_neurips.pdf" | relative_url }}).
+Download [paper]({{ "/files/papers/naht_neurips24.pdf" | relative_url }}).
 
 Abstract:
 ======

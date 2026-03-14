@@ -2,13 +2,29 @@
 title: "DM$^2$: Distributed multi-agent reinforcement learning via distribution matching"
 collection: publications
 permalink: /publications/dm2
-excerpt: 'We propose DM$^2$, an algoritm that allows a team of agents to perform cooperative tasks by independently imitating corresponding experts agents from a team of experts.'
+excerpt: 'We propose DM$^2$, an algorithm that allows a team of agents to perform cooperative tasks by independently imitating corresponding experts agents from a team of experts.'
 date: 2023-02-14
 venue: 'AAAI'
-paperurl: ''
+paperurl: 'https://doi.org/10.1609/aaai.v37i10.26382'
 citation: 'Caroline Wang*, Ishan Durugkar*, Elad Liebman*, Peter Stone. &quot;DM$^2$: Distributed Multi-Agent Reinforcement Learning via Distribution Matching.&quot; <i>AAAI 2023</i>.'
+slides: '/files/slides/dm2_slides.pdf'
+bibtex: |-
+  @inproceedings{wang2023dm2,
+    title = {{$DM^2$}: Decentralized Multi-Agent Reinforcement Learning via Distribution Matching},
+    shorttitle = {{$DM^2$}},
+    booktitle = {Proceedings of the Thirty-Seventh AAAI Conference on Artificial Intelligence and Thirty-Fifth Conference on Innovative Applications of Artificial Intelligence and Thirteenth Symposium on Educational Advances in Artificial Intelligence},
+    author = {Wang, Caroline and Durugkar, Ishan and Liebman, Elad and Stone, Peter},
+    year = 2023,
+    month = feb,
+    series = {AAAI'23/IAAI'23/EAAI'23},
+    volume = {37},
+    pages = {11699--11707},
+    publisher = {AAAI Press},
+    doi = {10.1609/aaai.v37i10.26382},
+    isbn = {978-1-57735-880-0}
+  }
 ---
-Download [paper]({{"/files/papers/dm2_aaai23.pdf" | relative_url}}), [slides]({{ "/files/slides/dm2_slides.pdf" | relative_url }}).
+Download [paper]({{"/files/papers/dm2_aaai23.pdf" | relative_url}}).
 
 Abstract:
 ======

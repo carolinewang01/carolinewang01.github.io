@@ -8,12 +8,19 @@ venue: 'arXiv preprint arXiv:2505.23686'
 award: '<a href="https://openreview.net/forum?id=2WW5SXXHn4">Oral spotlight at CoCoMARL 2025</a>'
 paperurl: 'https://arxiv.org/abs/2505.23686'
 citation: 'Caroline Wang, Arrasy Rahman, Jiaxun Cui, Yoonchang Sung, Peter Stone. &quot;ROTATE: Regret-driven Open-ended Training for Ad Hoc Teamwork.&quot; <i>arXiv preprint arXiv:2505.23686</i>.'
+slides: '/files/slides/rotate_slides.pdf'
 bibtex: |-
-  @article{wang2025rotate,
+  @misc{wang2025rotate,
     title={ROTATE: Regret-driven Open-ended Training for Ad Hoc Teamwork},
     author={Wang, Caroline and Rahman, Arrasy and Cui, Jiaxun and Sung, Yoonchang and Stone, Peter},
-    journal={arXiv preprint arXiv:2505.23686},
-    year={2025}
+    year = 2025,
+    month = may,
+    number = {arXiv:2505.23686},
+    eprint = {2505.23686},
+    primaryclass = {cs},
+    publisher = {arXiv},
+    doi = {10.48550/arXiv.2505.23686},
+    archiveprefix = {arXiv}
   }
 ---
 Download [paper](https://arxiv.org/pdf/2505.23686.pdf).

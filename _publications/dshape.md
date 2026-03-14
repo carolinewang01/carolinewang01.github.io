@@ -2,13 +2,28 @@
 title: "D-Shape: Demonstration Shaped Reinforcement Learning"
 collection: publications
 permalink: /publications/dshape
-excerpt: 'TLDR: We propose D-Shape, an RL+IL algorithm that allows learning from suboptimal demonstrations while retaining the ability to find the optimal policy with respect to the task reward.'
+excerpt: 'We propose D-Shape, an RL+IL algorithm that allows learning from suboptimal demonstrations while retaining the ability to find the optimal policy with respect to the task reward.'
 date: 2023-06-02
 venue: 'AAMAS'
-paperurl: ''
+paperurl: 'https://dl.acm.org/doi/10.5555/3545946.3598772'
 citation: 'Caroline Wang, Garrett Warnell, Peter Stone (2023). &quot;D-Shape: Demonstration Shaped Reinforcement Learning.&quot; <i>AAMAS 2023</i>.'
+slides: '/files/slides/dshape_slides_aamas23.pdf'
+bibtex: |-
+  @inproceedings{wang2023dshape,
+    title = {D-Shape: Demonstration Shaped Reinforcement Learning via Goal-Conditioning},
+    shorttitle = {D-Shape},
+    booktitle = {Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
+    author = {Wang, Caroline and Warnell, Garrett and Stone, Peter},
+    year = 2023,
+    month = may,
+    series = {{{AAMAS}} '23},
+    pages = {1267--1275},
+    publisher = {{International Foundation for Autonomous Agents and Multiagent Systems}},
+    address = {Richland, SC},
+    isbn = {978-1-4503-9432-1}
+  }
 ---
-Download [paper]({{"/files/papers/dshape_aamas23.pdf" | relative_url}}), [slides]({{ "/files/slides/dshape_slides_aamas23.pdf" | relative_url }}).
+Download [paper]({{"/files/papers/dshape_aamas23.pdf" | relative_url}}).
 
 Abstract:
 ======

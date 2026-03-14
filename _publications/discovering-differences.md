@@ -8,12 +8,18 @@ venue: 'arXiv preprint arXiv:2602.10324'
 paperurl: 'https://arxiv.org/abs/2602.10324'
 citation: 'Caroline Wang, Daniel Kasenberg, Kim Stachenfeld, Pablo Samuel Castro (2026). &quot;Discovering Differences in Strategic Behavior Between Humans and LLMs.&quot; <i>arXiv preprint arXiv:2602.10324</i>.'
 bibtex: |-
-  @article{wang2026discovering,
+  @misc{wang2026discoveringdifferences,
     title={Discovering Differences in Strategic Behavior Between Humans and LLMs},
     author={Wang, Caroline and Kasenberg, Daniel and Stachenfeld, Kim and Castro, Pablo Samuel},
-    journal={arXiv preprint arXiv:2602.10324},
-    year={2026}
+    year = 2026,
+    number = {arXiv:2602.10324},
+    eprint = {2602.10324},
+    primaryclass = {cs},
+    publisher = {arXiv},
+    doi = {10.48550/arXiv.2602.10324},
+    archiveprefix = {arXiv}
   }
+
 ---
 
 [View paper here](https://arxiv.org/pdf/2602.10324.pdf)

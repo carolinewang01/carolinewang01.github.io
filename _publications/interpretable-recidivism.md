@@ -5,8 +5,21 @@ permalink: /publications/interpretable-recidivism
 excerpt: 'We design various interpretable machine learning models to predict criminal recidivism.'
 date: 2022-03-28
 venue: 'Journal of Quantitative Criminology'
-paperurl: '' # 'https://link.springer.com/article/10.1007/s10940-022-09545-w'
+paperurl: 'https://link.springer.com/article/10.1007/s10940-022-09545-w'
 citation: 'Caroline Wang*, Bin Han*, Bhrij Patel, Feroze Mohideen, Cynthia Rudin (2022). &quot;In pursuit of interpretable, fair and accurate machine learning for criminal recidivism prediction.&quot; <i>Journal of Quantitative Criminology</i>.'
+bibtex: |-
+  @article{wang2023pursuitinterpretable,
+  title = {In Pursuit of Interpretable, Fair and Accurate Machine Learning for Criminal Recidivism Prediction},
+  author = {Wang, Caroline and Han, Bin and Patel, Bhrij and Rudin, Cynthia},
+  year = 2023,
+  month = jun,
+  journal = {Journal of Quantitative Criminology},
+  volume = {39},
+  number = {2},
+  pages = {519--581},
+  issn = {1573-7799},
+  doi = {10.1007/s10940-022-09545-w}
+  }
 ---
 
 [Link to arXiv version.](https://arxiv.org/abs/2005.04176)
