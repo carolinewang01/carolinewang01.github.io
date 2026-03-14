@@ -5,8 +5,8 @@ permalink: /publications/age-of-secrecy
 excerpt: "We partially reverse-engineer the COMPAS model for recidivism prediction."
 date: 2020-01-31
 venue: 'HDSR'
-pdfurl: '/files/papers/age_of_secrecy_hdsr_final.pdf'
 paperurl: https://hdsr.mitpress.mit.edu/pub/7z10o269
+pdfurl: '/files/papers/age_of_secrecy_hdsr_final.pdf'
 citation: "Rudin, Cynthia and Wang, Caroline and Coker, Beau (2020). \"The Age of Secrecy and Unfairness in Recidivism Prediction.\"  <i>Harvard Data Science Review</i>."
 bibtex: |-
     @article{rudin2020agesecrecy,

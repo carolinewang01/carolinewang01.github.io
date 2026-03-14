@@ -6,9 +6,10 @@ excerpt: "We introduce JaxAHT, the first open-source, JAX-based library designed
 date: 2026-03-01
 venue: 'Workshop on Multi-Agent Learning and Its Opportunities in the Era of Generative AI'
 paperurl: 'https://openreview.net/forum?id=DkZ2IEBpH1'
+# pdfurl: ''
 citation: 'Caroline Wang, Rolando Fernandez, Jiaxun Cui, Johnny Liu, Aditya Madhan, Zhihan Wang, Lingyun Xiao, Di Yang Shi, Arrasy Rahman, Peter Stone (2026). &quot;JaxAHT: A JAX-Based Library for Ad Hoc Teamwork.&quot; <i>Workshop on Multi-Agent Learning and Its Opportunities in the Era of Generative AI</i>.'
 bibtex: |-
-  @inproceedings{wang2026jaxahtjaxbased,
+  @inproceedings{wang2026jaxaht,
     title = {{{JaxAHT}}: A JAX-Based Library for Ad Hoc Teamwork},
     shorttitle = {{{JaxAHT}}},
     booktitle = {Workshop on Multi-Agent Learning and Its Opportunities in the Era of Generative AI},

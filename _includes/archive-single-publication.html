@@ -52,17 +52,17 @@
       {% if post.slides %}
         <a href="{{ post.slides }}" class="btn btn--info">Slides</a>
       {% endif %}
-      {% if post.award %}
-        {% if post.award contains "<a " %}
-          {{ post.award | replace: '<a ', '<a class="btn btn--success" ' }}
-        {% else %}
-          <span class="btn btn--success">{{ post.award }}</span>
-        {% endif %}
-      {% endif %}
       {% if post.bibtex %}
         <button class="btn" onclick="navigator.clipboard.writeText(this.dataset.bibtex); var btn = this; btn.innerText = 'Copied!'; setTimeout(function() { btn.innerText = 'Copy BibTeX'; }, 2000);" data-bibtex="{{ post.bibtex | escape }}">Copy BibTeX</button>
       {% endif %}
     </div>
+
+    <!-- print award -->
+    {% if post.award %}
+    <p itemprop="description" style="margin-bottom:10px; padding-top:0;"> 
+      <i>{{ post.award }}</i>
+    </p>
+    {% endif %}
 
     <!-- print excerpt -->
     {% if post.excerpt and site.read_more != 'enabled' %}
