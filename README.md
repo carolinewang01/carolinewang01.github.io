@@ -1,6 +1,6 @@
 This personal website is based off of the Github Pages template for academic personal websites, forked from mmistakes/minimal-mistakes (https://academicpages.github.io template).
 
-## Installation
+## Installation on Windows 11
 To update the website, it is key to have a locally served copy. In 2024, I served the website locally (on my Dell XPS) via WSL 2.0, running Ubuntu 20.04, and using the VSCode WSL extension.
 
 The following instructions are for that setup. 
