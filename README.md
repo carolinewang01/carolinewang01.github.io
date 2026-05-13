@@ -13,10 +13,26 @@ The following instructions are for that setup.
 6. Install the project via `bundle install`.
 7. Serve the site via `bundle exec jekyll serve`.
 
-## Instructions to Serve Locally 
+## Installation on macOS (Apple Silicon)
+Tested on macOS Sequoia with an M-series MacBook. Requires [Homebrew](https://brew.sh).
+
+1. Install rbenv (Ruby version manager) and ruby-build: `brew install rbenv ruby-build`
+2. Add rbenv to your shell (run once): `echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc && echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc`
+3. Restart your terminal (or run `source ~/.zshrc`).
+4. Install Ruby 3.2.2: `rbenv install 3.2.2`
+5. From the repo root, set the local Ruby version: `rbenv local 3.2.2`
+6. Install bundler: `gem install bundler`
+7. Install project dependencies: `bundle install`
+8. Serve the site: `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec jekyll serve`
+
+## Instructions to Serve Locally
 Build and serve your site locally with:
-`bundle exec jekyll serve`
+```
+LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec jekyll serve
+```
 By default, the site will be available at http://127.0.0.1:4000.
+
+The `LANG`/`LC_ALL` flags are required on macOS to prevent a UTF-8 encoding error in the SCSS compiler.
 
 ## Updating Existing Part of Website
 

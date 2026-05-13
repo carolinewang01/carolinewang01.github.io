@@ -3,7 +3,7 @@ title: "Discovering Differences in Strategic Behavior Between Humans and LLMs"
 collection: publications
 permalink: /publications/discovering-differences
 excerpt: "We employ AlphaEvolve to discover interpretable models from data, revealing that frontier LLMs can be capable of deeper strategic behavior than humans in iterated rock-paper-scissors."
-date: 2026
+date: 2026-01-01
 venue: 'ICML'
 paperurl: 'https://arxiv.org/abs/2602.10324'
 # pdfurl: ''
