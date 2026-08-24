@@ -100,7 +100,14 @@ layout: default
       <h2 class="section__title">Timeline</h2>
     </div>
 
-    {% assign news = site.data.timeline | sort: 'date' | reverse %}
+    {%- comment -%}
+      A timeline.yml holding only comments parses as `false`, not an empty
+      list, so guard before sorting or the build dies.
+    {%- endcomment -%}
+    {%- assign news = '' | split: ',' -%}
+    {%- if site.data.timeline -%}
+      {%- assign news = site.data.timeline | sort: 'date' | reverse -%}
+    {%- endif -%}
 
     {%- comment -%}
       Keep this capture free of stray whitespace: newlines would end up
