@@ -6,6 +6,7 @@ excerpt: 'We design various interpretable machine learning models to predict cri
 date: 2022-03-28
 venue: 'Journal of Quantitative Criminology'
 venue_short: 'J. Quant. Criminology'
+timeline_text: "Published a study in the Journal of Quantitative Criminology comparing interpretable recidivism models against COMPAS and the Arnold PSA on accuracy and fairness."
 paperurl: 'https://link.springer.com/article/10.1007/s10940-022-09545-w'
 pdfurl: '/files/papers/interpretable_recid_joqc20.pdf'
 citation: 'Caroline Wang*, Bin Han*, Bhrij Patel, Feroze Mohideen, Cynthia Rudin (2022). &quot;In pursuit of interpretable, fair and accurate machine learning for criminal recidivism prediction.&quot; <i>Journal of Quantitative Criminology</i>.'

@@ -4,16 +4,17 @@
    ========================================================================== */
 
 :root {
-  --paper:      #fbfaf7;
-  --surface:    #ffffff;
-  --ink:        #1c2127;
-  --ink-soft:   #4a5560;
-  --ink-faint:  #7a8590;
-  --rule:       #e5e1d8;
-  --rule-soft:  #f0ede6;
-  --accent:     #14607a;
-  --accent-dim: #eaf2f5;
-  --gold:       #a97b3d;
+  --paper:      #12151a;
+  --surface:    #191d24;
+  --surface-2:  #1f242c;
+  --ink:        #e8eaed;
+  --ink-soft:   #a7b1bd;
+  --ink-faint:  #78838f;
+  --rule:       #2b323b;
+  --rule-soft:  #232931;
+  --accent:     #7cc0dc;
+  --accent-dim: rgba(124, 192, 220, 0.12);
+  --gold:       #d3a765;
 }
 
 $display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
@@ -23,11 +24,67 @@ $ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Ar
    Base
    -------------------------------------------------------------------------- */
 
+html {
+  background-color: var(--paper);
+  color-scheme: dark;
+}
+
 body {
   background-color: var(--paper);
   color: var(--ink);
   font-family: $ui;
   -webkit-font-smoothing: antialiased;
+}
+
+/* The base theme hardcodes light colors on these; pull them onto the
+   dark palette rather than forking the theme. */
+.page__content,
+.page__content p,
+.page__content li,
+.page__content dl,
+.archive__item-excerpt,
+.author__bio,
+.page__meta,
+.page__lead {
+  color: var(--ink);
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6 {
+  color: var(--ink);
+}
+
+.page__content blockquote {
+  color: var(--ink-soft);
+  border-left-color: var(--rule);
+}
+
+.page__content code,
+.page__content pre,
+.highlight {
+  background-color: var(--surface-2);
+  color: var(--ink);
+}
+
+hr { border-color: var(--rule); }
+
+.page__content table,
+.page__content th,
+.page__content td {
+  border-color: var(--rule);
+  color: var(--ink);
+}
+
+.page__content th { background-color: var(--surface-2); }
+.page__content tr:nth-child(even) { background-color: var(--surface); }
+
+::selection {
+  background: var(--accent-dim);
+  color: var(--ink);
 }
 
 h1, h2, h3, h4, .page__title, .archive__item-title {
@@ -86,6 +143,14 @@ a {
 
   button {
     background-color: var(--ink);
+  }
+
+  .hidden-links {
+    background: var(--surface);
+    border-color: var(--rule);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+
+    &::after { border-bottom-color: var(--surface); }
   }
 }
 
@@ -162,7 +227,7 @@ a {
   object-fit: cover;
   border-radius: 3px;
   display: block;
-  filter: grayscale(12%);
+  border: 1px solid var(--rule);
 }
 
 .intro__contact {
@@ -334,15 +399,6 @@ a {
    Timeline
    -------------------------------------------------------------------------- */
 
-.section__hint {
-  font-family: $ui;
-  font-size: 0.72em;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-faint);
-}
-
 /* The panel is a self-contained scroll region so the timeline can grow
    indefinitely without pushing the rest of the page down. */
 .timeline-panel {
@@ -360,7 +416,7 @@ a {
     bottom: 1px;
     height: 3.25em;
     border-radius: 0 0 4px 4px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--surface) 85%);
+    background: linear-gradient(to bottom, rgba(25, 29, 36, 0), #191d24 85%);
     pointer-events: none;
   }
 }
@@ -457,6 +513,12 @@ a {
   line-height: 1.6;
   color: var(--ink-soft);
   margin: 0;
+}
+
+.tl-item__text.tl-item__award {
+  color: var(--gold);
+  font-style: italic;
+  margin-top: 0.25em;
 }
 
 /* --------------------------------------------------------------------------

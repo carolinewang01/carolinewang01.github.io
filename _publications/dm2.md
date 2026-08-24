@@ -5,6 +5,7 @@ permalink: /publications/dm2
 excerpt: 'We propose DM$^2$, an algorithm that allows a team of agents to perform cooperative tasks by independently imitating corresponding experts agents from a team of experts.'
 date: 2023-02-14
 venue: 'AAAI'
+timeline_text: "Presented DM² at AAAI, showing that independent agents can coordinate by each matching a distribution over expert trajectories."
 paperurl: 'https://doi.org/10.1609/aaai.v37i10.26382'
 pdfurl: '/files/papers/dm2_aaai23.pdf'
 citation: 'Caroline Wang*, Ishan Durugkar*, Elad Liebman*, Peter Stone. &quot;DM$^2$: Distributed Multi-Agent Reinforcement Learning via Distribution Matching.&quot; <i>AAAI 2023</i>.'

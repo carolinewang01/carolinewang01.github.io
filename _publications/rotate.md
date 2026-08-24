@@ -6,6 +6,7 @@ excerpt: 'We formulate ad hoc teamwork as an open-ended learning process between
 date: 2025-08-05
 venue: 'arXiv preprint arXiv:2505.23686'
 venue_short: 'arXiv'
+timeline_text: "Posted ROTATE, which reframes ad hoc teamwork as open-ended training against a regret-maximizing teammate generator."
 award: 'Oral spotlight at CoCoMARL 2025'
 paperurl: 'https://arxiv.org/abs/2505.23686'
 # pdfurl: ''

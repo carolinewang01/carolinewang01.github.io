@@ -98,7 +98,6 @@ layout: default
   <section class="home__section" id="timeline">
     <div class="section__head">
       <h2 class="section__title">Timeline</h2>
-      <span class="section__link section__hint">Scroll within the panel &darr;</span>
     </div>
 
     {% assign news = site.data.timeline | sort: 'date' | reverse %}
@@ -137,10 +136,11 @@ layout: default
         <h4 class="tl-item__title">
           <a href="{{ base_path }}{{ p.permalink }}">{{ p.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
         </h4>
+        {% if p.timeline_text %}
+        <p class="tl-item__text">{{ p.timeline_text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        {% endif %}
         {% if p.award %}
-        <p class="tl-item__text">{{ p.award }}</p>
-        {% elsif p.excerpt %}
-        <p class="tl-item__text">{{ p.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        <p class="tl-item__text tl-item__award">{{ p.award }}</p>
         {% endif %}
       </div>
       {% endif %}
