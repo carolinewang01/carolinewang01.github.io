@@ -48,12 +48,12 @@
 - date: 2023-04-01
   kind: talk
   title: "DM² at the Multi-agent RL reading group"
-  text: "Presented DM² and its approach to coordination without explicit communication to the multi-agent reinforcement learning reading group."
+  text: "Presented DM² and its approach to coordination without explicit communication to the UMD Multi-agent Reinforcement Learning Reading Group."
 
 - date: 2023-03-01
   kind: talk
   title: "DM² at the Cooperative AI Lab"
-  text: "Invited talk to the Cooperative AI Lab on distributed multi-agent reinforcement learning via distribution matching."
+  text: "Invited talk to Prof. Yali Du's lab on distributed multi-agent reinforcement learning via distribution matching."
 
 # --------------------------------------------------------------- position ---
 
@@ -70,9 +70,9 @@
 - date: 2020-08-01
   kind: news
   title: "Started my PhD at UT Austin"
-  text: "Joined Peter Stone's group at UT Austin to work on multi-agent reinforcement learning."
+  text: "Joined Peter Stone's group at UT Austin."
 
 - date: 2020-05-01
   kind: news
   title: "Graduated from Duke University"
-  text: "Graduated with a B.S. in Computer Science and Mathematics, with Highest Distinction."
+  text: "Graduated with a B.S. in Computer Science and Mathematics, with highest distinction."
