@@ -66,3 +66,13 @@
   kind: news
   title: "Research intern at Sony AI"
   text: "Summer internship hosted by Varun Kompella, on weighting event tables to improve RL sample efficiency."
+
+- date: 2020-08-01
+  kind: news
+  title: "Started my PhD at UT Austin"
+  text: "Joined the Learning Agents Research Group to work on multi-agent reinforcement learning with Peter Stone."
+
+- date: 2020-05-01
+  kind: news
+  title: "Graduated from Duke University"
+  text: "B.S. in Computer Science and Mathematics, with Highest Distinction."
