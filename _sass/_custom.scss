@@ -485,9 +485,10 @@ a {
     border: 2px solid var(--accent);
   }
 
-  &--news::before   { border-color: var(--ink-faint); }
-  &--award::before  { border-color: var(--gold); background: var(--gold); }
-  &--talk::before   { border-color: var(--accent); background: var(--accent); }
+  &--news::before    { border-color: var(--ink-faint); }
+  &--award::before   { border-color: var(--gold); background: var(--gold); }
+  &--talk::before    { border-color: var(--accent); background: var(--accent); }
+  &--service::before { border-color: var(--ink-soft); background: var(--ink-soft); }
 }
 
 .tl-item__meta {

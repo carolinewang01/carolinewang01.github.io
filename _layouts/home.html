@@ -123,9 +123,17 @@ layout: default
       {% if y == '' %}{% continue %}{% endif %}
       <h3 class="timeline__year">{{ y }}</h3>
 
+      {%- comment -%}
+        Walk months newest-first inside each year so hand-written entries and
+        publications interleave by date instead of grouping by source.
+      {%- endcomment -%}
+      {%- assign months = "12,11,10,09,08,07,06,05,04,03,02,01" | split: ',' -%}
+      {% for m in months %}
+
       {% for n in news %}
       {% assign ny = n.date | date: "%Y" %}
-      {% if ny == y %}
+      {% assign nm = n.date | date: "%m" %}
+      {% if ny == y and nm == m %}
       <div class="tl-item tl-item--{{ n.kind | default: 'news' }}">
         <div class="tl-item__meta">{{ n.date | date: "%b" }} &middot; {{ n.kind | default: 'news' }}</div>
         <h4 class="tl-item__title">
@@ -138,7 +146,8 @@ layout: default
 
       {% for p in pubs %}
       {% assign py = p.date | date: "%Y" %}
-      {% if py == y %}
+      {% assign pm = p.date | date: "%m" %}
+      {% if py == y and pm == m %}
       <div class="tl-item tl-item--paper">
         <div class="tl-item__meta">{{ p.date | date: "%b" }} &middot; {{ p.venue_short | default: p.venue }}</div>
         <h4 class="tl-item__title">
@@ -153,7 +162,9 @@ layout: default
       </div>
       {% endif %}
       {% endfor %}
-      {% endfor %}
+
+      {% endfor %}{%- comment -%} months {%- endcomment -%}
+      {% endfor %}{%- comment -%} years {%- endcomment -%}
     </div>
     </div>
   </section>
