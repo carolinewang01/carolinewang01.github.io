@@ -43,12 +43,12 @@
 - date: 2025-10-01
   kind: talk
   title: "ROTATE at the Google DeepMind RL reading group"
-  text: "Invited talk on regret-driven open-ended training for ad hoc teamwork."
+  text: "Reading group talk on regret-driven open-ended training for ad hoc teamwork."
 
 - date: 2023-04-01
   kind: talk
   title: "DM² at the Multi-agent RL reading group"
-  text: "Invited talk on distributed multi-agent RL via distribution matching."
+  text: "Reading group talk on distributed multi-agent RL via distribution matching."
 
 - date: 2023-03-01
   kind: talk
