@@ -221,12 +221,14 @@ a {
   padding: 3.5em 0 0.5em;
 }
 
+/* Oval frame: the source photo is portrait (4:5), so a 50% radius on the
+   natural aspect ratio gives an ellipse rather than a circle. */
 .intro__photo img {
   width: 190px;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 3px;
+  height: auto;
   display: block;
+  border-radius: 50%;
+  padding: 5px;
   border: 1px solid var(--rule);
 }
 
@@ -580,6 +582,45 @@ a {
 .archive .abstract-toggle { color: var(--accent) !important; }
 
 /* --------------------------------------------------------------------------
+   Author sidebar (publications page and publication detail pages)
+   -------------------------------------------------------------------------- */
+
+.sidebar {
+  .author__avatar img { border-color: var(--rule); }
+
+  .author__name { color: var(--ink); }
+
+  .author__bio,
+  .author__urls li {
+    color: var(--ink-soft);
+  }
+
+  .author__urls {
+    a {
+      color: var(--ink-soft);
+      text-decoration: none;
+
+      &:hover { color: var(--accent); }
+    }
+
+    i { color: var(--ink-faint); }
+  }
+
+  .btn--inverse {
+    color: var(--ink-soft) !important;
+    background-color: transparent !important;
+    border: 1px solid var(--rule) !important;
+    box-shadow: none;
+
+    &:hover {
+      color: var(--accent) !important;
+      border-color: var(--accent) !important;
+      background-color: var(--accent-dim) !important;
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
    CV viewer
    -------------------------------------------------------------------------- */
 
@@ -618,7 +659,7 @@ a {
     padding-top: 2.25em;
   }
 
-  .intro__photo img { width: 130px; height: 130px; }
+  .intro__photo img { width: 130px; }
   .intro__name { font-size: 2.1em; }
 
   .intro__contact {

@@ -5,7 +5,7 @@ permalink: /publications/jaxaht
 excerpt: "We introduce JaxAHT, the first open-source, JAX-based library designed to accelerate and standardize the Ad Hoc Teamwork research lifecycle using hardware acceleration."
 date: 2026-03-01
 venue: 'Workshop on Multi-Agent Learning and Its Opportunities in the Era of Generative AI'
-venue_short: 'MARL Workshop'
+venue_short: 'ICLR Workshop'
 timeline_text: "Released JaxAHT, an open-source JAX library for ad hoc teamwork research, and presented it at the Workshop on Multi-Agent Learning in the Era of Generative AI."
 paperurl: 'https://openreview.net/forum?id=DkZ2IEBpH1'
 # pdfurl: ''
