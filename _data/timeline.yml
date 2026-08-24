@@ -26,53 +26,53 @@
 - date: 2026-04-26
   kind: service
   title: "Co-organized the MAL-GAI workshop at ICLR 2026"
-  text: "The Workshop on Multi-Agent Learning and Its Opportunities in the Era of Generative AI ran in Rio de Janeiro, bringing the multi-agent learning and generative AI communities into the same room."
+  text: "Got the multi-agent learning crowd and the generative AI crowd into the same room in Rio, which felt overdue."
 
 - date: 2024-05-06
   kind: service
   title: "Co-organized the ALA workshop at AAMAS 2024"
-  text: "A second year on the Adaptive Learning Agents organizing committee, this time in Auckland."
+  text: "Round two of Adaptive Learning Agents, this time in Auckland. Much smoother than year one."
 
 - date: 2023-05-29
   kind: service
   title: "Co-organized the ALA workshop at AAMAS 2023"
-  text: "Joined the organizing committee of the Adaptive Learning Agents workshop, held at AAMAS in London."
+  text: "First time helping run a workshop — Adaptive Learning Agents, at AAMAS in London. Mostly an education in gently chasing reviewers."
 
 # ------------------------------------------------------------------ talks ---
 
 - date: 2025-10-01
   kind: talk
   title: "ROTATE at the Google DeepMind RL reading group"
-  text: "Reading group talk on regret-driven open-ended training for ad hoc teamwork."
+  text: "Walked the DeepMind RL reading group through ROTATE and the open-ended training idea behind it."
 
 - date: 2023-04-01
   kind: talk
   title: "DM² at the Multi-agent RL reading group"
-  text: "Reading group talk on distributed multi-agent RL via distribution matching."
+  text: "Reading group talk on getting agents to coordinate without talking to each other."
 
 - date: 2023-03-01
   kind: talk
   title: "DM² at the Cooperative AI Lab"
-  text: "Invited talk on distributed multi-agent RL via distribution matching."
+  text: "Invited over to talk DM² with the Cooperative AI Lab. Good questions, several of which I couldn't answer yet."
 
 # --------------------------------------------------------------- position ---
 
 - date: 2025-06-01
   kind: news
   title: "Student researcher at Google DeepMind"
-  text: "Joined Google DeepMind through February 2026, hosted by Pablo Samuel Castro, working on LLM-powered scientific discovery for human behavior in strategic scenarios."
+  text: "Nine months with Pablo Samuel Castro, pointing AlphaEvolve at how humans and LLMs actually behave in strategic games. Ran through February 2026."
 
 - date: 2023-06-01
   kind: news
   title: "Research intern at Sony AI"
-  text: "Summer internship hosted by Varun Kompella, on weighting event tables to improve RL sample efficiency."
+  text: "Spent the summer with Varun Kompella trying to make replay buffers smarter, on Sony's game environments."
 
 - date: 2020-08-01
   kind: news
   title: "Started my PhD at UT Austin"
-  text: "Joined the Learning Agents Research Group to work on multi-agent reinforcement learning with Peter Stone."
+  text: "Moved to Austin, joined Peter Stone's lab, and started down the multi-agent RL road."
 
 - date: 2020-05-01
   kind: news
   title: "Graduated from Duke University"
-  text: "B.S. in Computer Science and Mathematics, with Highest Distinction."
+  text: "Wrapped up a B.S. in CS and math, with Highest Distinction. Onward."

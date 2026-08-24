@@ -5,7 +5,7 @@ permalink: /publications/age-of-secrecy
 excerpt: "We partially reverse-engineer the COMPAS model for recidivism prediction."
 date: 2020-01-31
 venue: 'HDSR'
-timeline_text: "Published our partial reverse-engineering of COMPAS in Harvard Data Science Review, offering an alternative explanation for its apparent racial bias."
+timeline_text: "Reverse-engineered enough of COMPAS to argue its apparent racial bias looks a lot like a strange nonlinear age term nobody had noticed. My first paper, and still the one I get asked about."
 paperurl: https://hdsr.mitpress.mit.edu/pub/7z10o269
 pdfurl: '/files/papers/age_of_secrecy_hdsr_final.pdf'
 citation: "Rudin, Cynthia and Wang, Caroline and Coker, Beau (2020). \"The Age of Secrecy and Unfairness in Recidivism Prediction.\"  <i>Harvard Data Science Review</i>."
