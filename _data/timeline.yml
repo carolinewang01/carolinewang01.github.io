@@ -1,0 +1,36 @@
+# Hand-written timeline entries for the home page.
+#
+# Publications are added to the timeline automatically from _publications/,
+# so this file is only for everything else: talks, awards, service, travel,
+# internships, releases, and so on.
+#
+# Fields:
+#   date  (required)  YYYY-MM-DD -- used for sorting and for the year label
+#   kind  (required)  one of: news, talk, award, service, release
+#   title (required)  short headline
+#   text  (optional)  a sentence of context
+#   link  (optional)  URL the title should point to
+#
+# Newest entries can go anywhere in the file; they are sorted by date.
+
+- date: 2026-01-05
+  kind: news
+  title: "On the job market for industry research scientist roles"
+  text: "Finishing my Ph.D. at UT Austin and looking for research scientist positions. Feel free to reach out."
+
+# Add real dates and details for these, then uncomment:
+#
+# - date: YYYY-MM-DD
+#   kind: news
+#   title: "Research intern at Google DeepMind"
+#   text: "Hosted by Pablo Samuel Castro."
+#
+# - date: YYYY-MM-DD
+#   kind: news
+#   title: "Research intern at Sony AI"
+#   text: "Hosted by Varun Kompella."
+#
+# - date: YYYY-MM-DD
+#   kind: talk
+#   title: "Talk title"
+#   text: "Venue, city."
