@@ -5,7 +5,7 @@ permalink: /publications/naht
 excerpt: 'Existing paradigms for multi-agent coordination are limited by assuming that either all agents are controlled (e.g. the typical cooperative MARL algorithm), or that only a single agent is controlled (ad hoc teamwork / zero shot coordination). We pose the N-Agent Ad Hoc Teamwork (NAHT) problem to the community, to lift these restrictions and pave the path towards more open multi-agent learning paradigms. '
 date: 2024-12-15
 venue: 'NeurIPS'
-timeline_text: "NeurIPS. The field assumes you either control every agent or exactly one, and real deployments are neither — so we named the middle ground and built an algorithm for it."
+timeline_text: "Presented N-Agent Ad Hoc Teamwork at NeurIPS. Existing work assumes either that every agent is controlled or that only one is, so we formalized the setting in between and proposed an algorithm for it."
 paperurl: 'https://proceedings.neurips.cc/paper_files/paper/2024/hash/cabf611498431ad89a85ace75f790d93-Abstract-Conference.html'
 pdfurl: '/files/papers/naht_neurips24.pdf'
 citation: 'Caroline Wang, Arrasy Rahman, Ishan Durugkar, Elad Liebman, Peter Stone. &quot;N-Agent Ad Hoc Teamwork.&quot; <i>NeurIPS 2024</i>.'

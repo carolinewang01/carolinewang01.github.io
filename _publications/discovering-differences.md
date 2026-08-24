@@ -5,7 +5,7 @@ permalink: /publications/discovering-differences
 excerpt: "We employ AlphaEvolve to discover interpretable models from data, revealing that frontier LLMs can be capable of deeper strategic behavior than humans in iterated rock-paper-scissors."
 date: 2026-07-09
 venue: 'ICML'
-timeline_text: "Took this one to ICML. We pointed AlphaEvolve at rock-paper-scissors data and it turns out frontier LLMs can play deeper strategy than people do. Fell out of my time at GDM."
+timeline_text: "Presented this work at ICML. We used AlphaEvolve to discover interpretable models of behavior directly from data, and found that frontier LLMs can play more strategically than humans in iterated rock-paper-scissors. This came out of my time at Google DeepMind."
 paperurl: 'https://arxiv.org/abs/2602.10324'
 # pdfurl: ''
 citation: 'Caroline Wang, Daniel Kasenberg, Kim Stachenfeld, Pablo Samuel Castro (2026). &quot;Discovering Differences in Strategic Behavior Between Humans and LLMs.&quot; <i>ICML 2026</i>.'
