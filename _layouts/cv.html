@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+{% assign cv = page.cv_file | prepend: base_path %}
+
+<div id="main" role="main" class="home cv-page">
+
+  <section class="home__section cv-section">
+    <div class="section__head">
+      <h2 class="section__title">Curriculum Vitae</h2>
+    </div>
+
+    {{ content }}
+
+    <!-- The browser's own PDF viewer scrolls inside this frame. -->
+    <div class="cv-viewer">
+      <iframe class="cv-viewer__frame" src="{{ cv }}#view=FitH" title="Curriculum vitae"></iframe>
+    </div>
+
+    <p class="cv-note">
+      Not seeing the CV? Some mobile browsers won&rsquo;t display PDFs inline &mdash;
+      <a href="{{ cv }}" download>download the PDF</a> instead.
+    </p>
+  </section>
+
+</div>

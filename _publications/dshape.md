@@ -5,6 +5,7 @@ permalink: /publications/dshape
 excerpt: 'We propose D-Shape, an RL+IL algorithm that allows learning from suboptimal demonstrations while retaining the ability to find the optimal policy with respect to the task reward.'
 date: 2023-06-02
 venue: 'AAMAS'
+timeline_text: "Presented D-Shape at AAMAS. It resolves the conflict between imitating suboptimal demonstrations and maximizing task reward by treating the demonstrations as shaping rewards, so the agent can still converge to the optimal policy."
 paperurl: 'https://dl.acm.org/doi/10.5555/3545946.3598772'
 pdfurl: '/files/papers/dshape_aamas23.pdf'
 citation: 'Caroline Wang, Garrett Warnell, Peter Stone (2023). &quot;D-Shape: Demonstration Shaped Reinforcement Learning.&quot; <i>AAMAS 2023</i>.'

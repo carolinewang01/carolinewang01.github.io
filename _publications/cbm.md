@@ -5,6 +5,7 @@ permalink: /publications/cbm
 excerpt: 'We introduce Causal Bisimulation Learning (CBM), a method that learns the causal relationships in the dynamics and reward functions for each task to derive a minimal,  task-specific abstraction.'
 date: 2024-02-14
 venue: 'AAAI'
+timeline_text: "Presented CBM at AAAI, joint first-authored with Zizhao Wang. The method learns the causal relationships in the dynamics and reward for each task, and keeps only the state variables that task actually needs."
 paperurl: 'https://doi.org/10.1609/aaai.v38i14.29507'
 pdfurl: '/files/papers/cbm_aaai24.pdf'
 citation: 'Zizhao Wang*, Caroline Wang*, Xuesu Xiao, Yuke Zhu, Peter Stone (2024). &quot;Building Minimal and Reusable Causal State Abstractions for Reinforcement Learning.&quot;  <i>AAAI 2024</i>.'

@@ -5,6 +5,8 @@ permalink: /publications/rotate
 excerpt: 'We formulate ad hoc teamwork as an open-ended learning process between a regret-maximizing teammate generator and an ad hoc teamwork agent.'
 date: 2025-08-05
 venue: 'arXiv preprint arXiv:2505.23686'
+venue_short: 'arXiv'
+timeline_text: "Posted ROTATE on arXiv. Instead of training against a fixed population of teammates, we alternate between improving the ad hoc teamwork agent and generating new teammates that probe its weaknesses."
 award: 'Oral spotlight at CoCoMARL 2025'
 paperurl: 'https://arxiv.org/abs/2505.23686'
 # pdfurl: ''

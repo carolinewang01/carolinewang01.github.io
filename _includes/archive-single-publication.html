@@ -28,9 +28,14 @@
       </div>
     {% endif %}
     
-    <!-- define title -->
+    <!-- define venue + title -->
+    <p class="pub__venue pub__venue--inline">
+      {{ post.venue_short | default: post.venue }}
+      <span class="pub__year">{{ post.date | date: "%Y" }}</span>
+    </p>
+
     <h2>
-      {{ title }} 
+      {{ title }}
     </h2>
 
 

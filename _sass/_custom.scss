@@ -1,0 +1,688 @@
+/* ==========================================================================
+   Custom site design
+   Loaded last so it intentionally overrides the base theme.
+   ========================================================================== */
+
+:root {
+  --paper:      #262b31;
+  --surface:    #2e343b;
+  --surface-2:  #373e46;
+  --ink:        #eef0f2;
+  --ink-soft:   #bcc4cd;
+  --ink-faint:  #949da7;
+  --rule:       #434b55;
+  --rule-soft:  #383f48;
+  --accent:     #7cc0dc;
+  --accent-dim: rgba(124, 192, 220, 0.12);
+  --gold:       #d3a765;
+}
+
+$display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+$ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+/* --------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
+
+html {
+  background-color: var(--paper);
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: $ui;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The base theme hardcodes light colors on these; pull them onto the
+   dark palette rather than forking the theme. */
+.page__content,
+.page__content p,
+.page__content li,
+.page__content dl,
+.archive__item-excerpt,
+.author__bio,
+.page__meta,
+.page__lead {
+  color: var(--ink);
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6 {
+  color: var(--ink);
+}
+
+.page__content blockquote {
+  color: var(--ink-soft);
+  border-left-color: var(--rule);
+}
+
+.page__content code,
+.page__content pre,
+.highlight {
+  background-color: var(--surface-2);
+  color: var(--ink);
+}
+
+hr { border-color: var(--rule); }
+
+.page__content table,
+.page__content th,
+.page__content td {
+  border-color: var(--rule);
+  color: var(--ink);
+}
+
+.page__content th { background-color: var(--surface-2); }
+.page__content tr:nth-child(even) { background-color: var(--surface); }
+
+::selection {
+  background: var(--accent-dim);
+  color: var(--ink);
+}
+
+h1, h2, h3, h4, .page__title, .archive__item-title {
+  font-family: $display;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--accent);
+}
+
+/* --------------------------------------------------------------------------
+   Masthead & footer
+   -------------------------------------------------------------------------- */
+
+.masthead {
+  background-color: var(--paper);
+  border-bottom: 1px solid var(--rule);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.masthead__inner-wrap {
+  max-width: 60rem;
+  padding: 0.6em 1.5em;
+}
+
+.greedy-nav {
+  background: transparent;
+
+  a {
+    color: var(--ink-soft);
+    font-family: $ui;
+    font-size: 0.86em;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 0.25em 0;
+    margin: 0 0.9em 0 0;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+  }
+
+  .visible-links li:first-child a {
+    font-family: $display;
+    font-size: 1.05em;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  button {
+    background-color: var(--ink);
+  }
+
+  .hidden-links {
+    background: var(--surface);
+    border-color: var(--rule);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+
+    &::after { border-bottom-color: var(--surface); }
+  }
+}
+
+.page__footer {
+  background-color: var(--paper);
+  border-top: 1px solid var(--rule);
+  color: var(--ink-faint);
+
+  footer {
+    max-width: 60rem;
+  }
+
+  a { color: var(--ink-faint); }
+  a:hover { color: var(--accent); }
+}
+
+/* --------------------------------------------------------------------------
+   Home layout shell
+   -------------------------------------------------------------------------- */
+
+.home {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 0 1.5em 5em;
+}
+
+.home__section {
+  padding-top: 3.25em;
+
+  + .home__section { padding-top: 3.75em; }
+}
+
+.section__head {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+  margin-bottom: 1.6em;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.5em;
+}
+
+.section__title {
+  font-family: $ui;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0;
+}
+
+.section__link {
+  margin-left: auto;
+  font-size: 0.82em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   Intro
+   -------------------------------------------------------------------------- */
+
+.intro {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 2.75em;
+  align-items: start;
+  padding: 3.5em 0 0.5em;
+}
+
+/* Oval frame: the source photo is portrait (4:5), so a 50% radius on the
+   natural aspect ratio gives an ellipse rather than a circle. */
+.intro__photo img {
+  width: 190px;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid var(--rule);
+}
+
+.intro__contact {
+  margin: 1.1em 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.82em;
+  line-height: 1.9;
+
+  li { margin: 0; }
+
+  a {
+    color: var(--ink-soft);
+    text-decoration: none;
+
+    &:hover { color: var(--accent); }
+  }
+
+  i {
+    width: 1.15em;
+    margin-right: 0.55em;
+    color: var(--ink-faint);
+  }
+}
+
+.intro__name {
+  font-family: $display;
+  font-size: 2.6em;
+  line-height: 1.1;
+  margin: -0.12em 0 0.18em;
+}
+
+.intro__role {
+  font-family: $ui;
+  font-size: 0.95em;
+  color: var(--ink-soft);
+  margin: 0 0 1.2em;
+
+  a { color: var(--ink-soft); text-decoration: underline; text-decoration-color: var(--rule); }
+  a:hover { color: var(--accent); }
+}
+
+.intro__bio {
+  font-size: 0.97em;
+  line-height: 1.68;
+  color: var(--ink);
+
+  p { margin: 0 0 1em; }
+  p:last-child { margin-bottom: 0; }
+}
+
+.callout {
+  display: block;
+  background: var(--accent-dim);
+  border-left: 3px solid var(--accent);
+  padding: 0.75em 1em;
+  margin: 0 0 1.4em;
+  font-size: 0.92em;
+  line-height: 1.55;
+  color: var(--ink);
+  border-radius: 0 3px 3px 0;
+}
+
+/* --------------------------------------------------------------------------
+   Publication list
+   -------------------------------------------------------------------------- */
+
+.pub-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pub {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 1.5em;
+  padding: 1.15em 0;
+  border-bottom: 1px solid var(--rule-soft);
+
+  &:last-child { border-bottom: 0; }
+}
+
+.pub__venue {
+  font-family: $ui;
+  font-size: 0.76em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  line-height: 1.5;
+  padding-top: 0.25em;
+}
+
+.pub__year {
+  display: block;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+}
+
+.pub__title {
+  font-family: $display;
+  font-size: 1.08em;
+  line-height: 1.35;
+  margin: 0 0 0.3em;
+
+  a { color: var(--ink); text-decoration: none; }
+  a:hover { color: var(--accent); }
+}
+
+.pub__authors {
+  font-size: 0.83em;
+  color: var(--ink-soft);
+  margin: 0 0 0.35em;
+  line-height: 1.55;
+
+  .me { color: var(--ink); font-weight: 600; }
+}
+
+.pub__tldr {
+  font-size: 0.86em;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0 0 0.5em;
+}
+
+.pub__award {
+  display: inline-block;
+  font-size: 0.74em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--gold);
+  border: 1px solid rgba(169, 123, 61, 0.35);
+  background: rgba(169, 123, 61, 0.07);
+  border-radius: 2px;
+  padding: 0.1em 0.5em;
+  margin: 0 0 0.5em;
+}
+
+.pub__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  font-size: 0.78em;
+
+  a, button {
+    font-family: $ui;
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 0.2em 0.6em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.15s ease;
+
+    &:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-dim);
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Timeline
+   -------------------------------------------------------------------------- */
+
+/* The panel is a self-contained scroll region so the timeline can grow
+   indefinitely without pushing the rest of the page down. */
+.timeline-panel {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+
+  /* bottom fade cueing that there is more to scroll */
+  &::after {
+    content: "";
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    height: 3.25em;
+    border-radius: 0 0 4px 4px;
+    background: linear-gradient(to bottom, rgba(46, 52, 59, 0), #2e343b 85%);
+    pointer-events: none;
+  }
+}
+
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 0 1.75em 2.5em;
+  list-style: none;
+  max-height: 30rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule) transparent;
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+  }
+
+  &::-webkit-scrollbar { width: 8px; }
+  &::-webkit-scrollbar-track { background: transparent; }
+  &::-webkit-scrollbar-thumb {
+    background: var(--rule);
+    border-radius: 4px;
+
+    &:hover { background: var(--ink-faint); }
+  }
+}
+
+.timeline__year {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  font-family: $display;
+  font-size: 1.4em;
+  color: var(--ink-faint);
+  background: var(--surface);
+  box-shadow: 0 1px 0 var(--rule-soft);
+  /* full-bleed within the padded scroll container */
+  margin: 1.6em -1.75em 0.8em;
+  padding: 0.35em 1.75em 0.35em 3.85rem;
+
+  &:first-child { margin-top: 0; }
+}
+
+.tl-item {
+  position: relative;
+  padding: 0 0 1.35em 2.1rem;
+  border-left: 1px solid var(--rule);
+  margin-left: 0.34rem;
+
+  &:last-child { border-left-color: transparent; padding-bottom: 0.5em; }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -0.345rem;
+    top: 0.42em;
+    width: 0.69rem;
+    height: 0.69rem;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 2px solid var(--accent);
+  }
+
+  &--news::before    { border-color: var(--ink-faint); }
+  &--award::before   { border-color: var(--gold); background: var(--gold); }
+  &--talk::before    { border-color: var(--accent); background: var(--accent); }
+  &--service::before { border-color: var(--ink-soft); background: var(--ink-soft); }
+}
+
+.tl-item__meta {
+  font-family: $ui;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.25em;
+}
+
+.tl-item__title {
+  font-family: $display;
+  font-size: 1.02em;
+  line-height: 1.4;
+  margin: 0 0 0.2em;
+
+  a { color: var(--ink); text-decoration: none; }
+  a:hover { color: var(--accent); }
+}
+
+.tl-item__text {
+  font-size: 0.86em;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.tl-item__text.tl-item__award {
+  color: var(--gold);
+  font-style: italic;
+  margin-top: 0.25em;
+}
+
+/* --------------------------------------------------------------------------
+   Publications page (shares the card language)
+   -------------------------------------------------------------------------- */
+
+.archive {
+  max-width: 54rem;
+  padding-bottom: 3em;
+}
+
+.archive .list__item {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 1.5em 1.6em;
+  margin-bottom: 1.25em;
+}
+
+.archive .archive__item h2 {
+  font-family: $display;
+  font-size: 1.3em;
+  line-height: 1.3;
+  margin: 0 0 0.65em;
+  padding: 0;
+}
+
+.pub__venue--inline {
+  margin: 0 0 0.3em;
+  padding: 0;
+
+  .pub__year { display: inline; margin-left: 0.5em; }
+}
+
+/* Quiet, uniform link chips in place of the theme's filled buttons. */
+.archive .archive__item .btn {
+  font-family: $ui;
+  font-size: 0.78em;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  /* the theme sets button colors with !important, so match it */
+  color: var(--ink-soft) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--rule) !important;
+  border-radius: 3px;
+  padding: 0.28em 0.7em;
+  text-decoration: none;
+  text-shadow: none;
+  box-shadow: none;
+
+  &:hover {
+    color: var(--accent) !important;
+    border-color: var(--accent) !important;
+    background-color: var(--accent-dim) !important;
+  }
+}
+
+.archive .abstract-toggle { color: var(--accent) !important; }
+
+/* --------------------------------------------------------------------------
+   Author sidebar (publications page and publication detail pages)
+   -------------------------------------------------------------------------- */
+
+.sidebar {
+  .author__avatar img { border-color: var(--rule); }
+
+  .author__name { color: var(--ink); }
+
+  .author__bio,
+  .author__urls li {
+    color: var(--ink-soft);
+  }
+
+  .author__urls {
+    a {
+      color: var(--ink-soft);
+      text-decoration: none;
+
+      &:hover { color: var(--accent); }
+    }
+
+    i { color: var(--ink-faint); }
+  }
+
+  .btn--inverse {
+    color: var(--ink-soft) !important;
+    background-color: transparent !important;
+    border: 1px solid var(--rule) !important;
+    box-shadow: none;
+
+    &:hover {
+      color: var(--accent) !important;
+      border-color: var(--accent) !important;
+      background-color: var(--accent-dim) !important;
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   CV viewer
+   -------------------------------------------------------------------------- */
+
+.cv-section { padding-top: 2.5em; }
+
+.cv-viewer {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  height: min(84vh, 1150px);
+  min-height: 32rem;
+}
+
+.cv-viewer__frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.cv-note {
+  font-size: 0.82em;
+  color: var(--ink-faint);
+  margin: 0.9em 0 0;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 47em) {
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding-top: 2.25em;
+  }
+
+  .intro__photo img { width: 130px; }
+  .intro__name { font-size: 2.1em; }
+
+  .intro__contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35em 1.1em;
+  }
+
+  .timeline { padding: 0 1.1em 2.25em; max-height: 26rem; }
+
+  .timeline__year {
+    margin-left: -1.1em;
+    margin-right: -1.1em;
+    padding-left: 3.2rem;
+    padding-right: 1.1em;
+  }
+
+  .pub {
+    grid-template-columns: 1fr;
+    gap: 0.35em;
+  }
+
+  .pub__venue { padding-top: 0; }
+  .pub__year { display: inline; margin-left: 0.5em; }
+}

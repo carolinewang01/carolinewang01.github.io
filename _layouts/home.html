@@ -1,0 +1,172 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" role="main" class="home">
+
+  <!-- ===================== Intro ===================== -->
+  <section class="intro" itemscope itemtype="http://schema.org/Person">
+    <div class="intro__photo">
+      <img src="{{ site.author.avatar | prepend: '/images/' | prepend: base_path }}"
+           alt="{{ site.author.name }}" itemprop="image">
+      <ul class="intro__contact">
+        {% if site.author.email %}
+        <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-fw fa-envelope"></i>Email</a></li>
+        {% endif %}
+        {% if site.author.googlescholar %}
+        <li><a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar ai-fw"></i>Google Scholar</a></li>
+        {% endif %}
+        {% if site.author.github %}
+        <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-fw fa-github"></i>GitHub</a></li>
+        {% endif %}
+        {% if site.author.linkedin %}
+        <li><a href="{{ site.author.linkedin }}"><i class="fab fa-fw fa-linkedin"></i>LinkedIn</a></li>
+        {% endif %}
+        {% if site.author.bluesky %}
+        <li><a href="https://bsky.app/profile/{{ site.author.bluesky }}"><i class="fa-brands fa-fw fa-bluesky"></i>Bluesky</a></li>
+        {% endif %}
+        {% if site.author.twitter %}
+        <li><a href="https://x.com/{{ site.author.twitter }}"><i class="fa-brands fa-fw fa-x-twitter"></i>X</a></li>
+        {% endif %}
+        {% if page.cv_url %}
+        <li><a href="{% if page.cv_url contains '://' %}{{ page.cv_url }}{% else %}{{ base_path }}{{ page.cv_url }}{% endif %}"><i class="fas fa-fw fa-file-lines"></i>CV</a></li>
+        {% endif %}
+      </ul>
+    </div>
+
+    <div class="intro__text">
+      <h1 class="intro__name" itemprop="name">{{ site.author.name }}</h1>
+      <p class="intro__role">{{ page.role | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+
+      {% if page.callout %}
+      <p class="callout">{{ page.callout | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      {% endif %}
+
+      <div class="intro__bio">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Publications ===================== -->
+  <section class="home__section" id="publications">
+    <div class="section__head">
+      <h2 class="section__title">Publications</h2>
+      <a class="section__link" href="{{ base_path }}/publications/">Full list, abstracts &amp; BibTeX &rarr;</a>
+    </div>
+
+    <ol class="pub-list">
+      {% assign pubs = site.publications | sort: 'date' | reverse %}
+      {% for post in pubs %}
+      {% assign authors = post.citation | split: '&quot;' | first | split: '(' | first | strip | replace: 'Caroline Wang', '<span class="me">Caroline Wang</span>' | replace: 'Wang, Caroline', '<span class="me">Wang, Caroline</span>' %}
+      <li class="pub">
+        <div class="pub__venue">
+          {{ post.venue_short | default: post.venue }}
+          <span class="pub__year">{{ post.date | date: "%Y" }}</span>
+        </div>
+
+        <div class="pub__body">
+          <h3 class="pub__title">
+            <a href="{{ base_path }}{{ post.permalink }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+          </h3>
+
+          <p class="pub__authors">{{ authors }}</p>
+
+          {% if post.award %}<span class="pub__award">{{ post.award }}</span>{% endif %}
+
+          {% if post.excerpt %}
+          <p class="pub__tldr">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          {% endif %}
+
+          <div class="pub__links">
+            {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+            {% if post.pdfurl %}<a href="{% if post.pdfurl contains '://' %}{{ post.pdfurl }}{% else %}{{ base_path }}{{ post.pdfurl }}{% endif %}">PDF</a>{% endif %}
+            {% if post.code %}<a href="{{ post.code }}">Code</a>{% endif %}
+            {% if post.website %}<a href="{{ post.website }}">Website</a>{% endif %}
+            {% if post.slides %}<a href="{{ post.slides }}">Slides</a>{% endif %}
+            <a href="{{ base_path }}{{ post.permalink }}">Details</a>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <!-- ===================== Timeline ===================== -->
+  <section class="home__section" id="timeline">
+    <div class="section__head">
+      <h2 class="section__title">Timeline</h2>
+    </div>
+
+    {%- comment -%}
+      A timeline.yml holding only comments parses as `false`, not an empty
+      list, so guard before sorting or the build dies.
+    {%- endcomment -%}
+    {%- assign news = '' | split: ',' -%}
+    {%- if site.data.timeline -%}
+      {%- assign news = site.data.timeline | sort: 'date' | reverse -%}
+    {%- endif -%}
+
+    {%- comment -%}
+      Keep this capture free of stray whitespace: newlines would end up
+      inside the year tokens and defeat `uniq`, duplicating year headings.
+    {%- endcomment -%}
+    {%- capture year_blob -%}{%- for p in pubs -%}{{ p.date | date: "%Y" }},{%- endfor -%}{%- for n in news -%}{{ n.date | date: "%Y" }},{%- endfor -%}{%- endcapture -%}
+    {%- assign years = year_blob | split: ',' | uniq | sort | reverse -%}
+
+    <div class="timeline-panel">
+    <div class="timeline" tabindex="0" aria-label="Timeline of recent activity">
+      {% for year in years %}
+      {% assign y = year | strip %}
+      {% if y == '' %}{% continue %}{% endif %}
+      <h3 class="timeline__year">{{ y }}</h3>
+
+      {%- comment -%}
+        Walk months newest-first inside each year so hand-written entries and
+        publications interleave by date instead of grouping by source.
+      {%- endcomment -%}
+      {%- assign months = "12,11,10,09,08,07,06,05,04,03,02,01" | split: ',' -%}
+      {% for m in months %}
+
+      {% for n in news %}
+      {% assign ny = n.date | date: "%Y" %}
+      {% assign nm = n.date | date: "%m" %}
+      {% if ny == y and nm == m %}
+      <div class="tl-item tl-item--{{ n.kind | default: 'news' }}">
+        <div class="tl-item__meta">{{ n.date | date: "%b" }} &middot; {{ n.kind | default: 'news' }}</div>
+        <h4 class="tl-item__title">
+          {% if n.link %}<a href="{{ n.link }}">{{ n.title }}</a>{% else %}{{ n.title }}{% endif %}
+        </h4>
+        {% if n.text %}<p class="tl-item__text">{{ n.text }}</p>{% endif %}
+      </div>
+      {% endif %}
+      {% endfor %}
+
+      {% for p in pubs %}
+      {% assign py = p.date | date: "%Y" %}
+      {% assign pm = p.date | date: "%m" %}
+      {% if py == y and pm == m %}
+      <div class="tl-item tl-item--paper">
+        <div class="tl-item__meta">{{ p.date | date: "%b" }} &middot; {{ p.venue_short | default: p.venue }}</div>
+        <h4 class="tl-item__title">
+          <a href="{{ base_path }}{{ p.permalink }}">{{ p.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+        </h4>
+        {% if p.timeline_text %}
+        <p class="tl-item__text">{{ p.timeline_text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        {% endif %}
+        {% if p.award %}
+        <p class="tl-item__text tl-item__award">{{ p.award }}</p>
+        {% endif %}
+      </div>
+      {% endif %}
+      {% endfor %}
+
+      {% endfor %}{%- comment -%} months {%- endcomment -%}
+      {% endfor %}{%- comment -%} years {%- endcomment -%}
+    </div>
+    </div>
+  </section>
+
+</div>
