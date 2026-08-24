@@ -1,8 +1,16 @@
 # Hand-written timeline entries for the home page.
 #
-# Publications are added to the timeline automatically from _publications/,
-# so this file is only for everything else: talks, awards, service, travel,
-# internships, releases, and so on.
+# There are two sources for the timeline, and this file is only one of them:
+#
+#   1. Publications, added AUTOMATICALLY. Every file in _publications/ shows
+#      up in the timeline, positioned by its `date`. Nothing to do here when
+#      you add a paper. Optionally give the paper a `timeline_text:` field in
+#      its front matter to describe the event in your own words, e.g.
+#        timeline_text: "Presented X at NeurIPS, which shows ..."
+#      Without it the entry still renders, just with title and venue only.
+#
+#   2. Everything else, listed below by hand: talks, awards, service, travel,
+#      internships, releases, news.
 #
 # Fields:
 #   date  (required)  YYYY-MM-DD -- used for sorting and for the year label

@@ -5,7 +5,7 @@ excerpt: "About Caroline"
 layout: home
 author_profile: false
 role: "Ph.D. candidate in Computer Science, UT Austin &middot; advised by [Peter Stone](https://www.cs.utexas.edu/~pstone/)"
-cv_url: /files/Wang_Resume_2026.pdf
+cv_url: /cv/
 callout: "**I am currently on the job market for industry research scientist roles**---feel free to reach out!"
 redirect_from:
   - /about/

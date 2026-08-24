@@ -4,14 +4,14 @@
    ========================================================================== */
 
 :root {
-  --paper:      #12151a;
-  --surface:    #191d24;
-  --surface-2:  #1f242c;
-  --ink:        #e8eaed;
-  --ink-soft:   #a7b1bd;
-  --ink-faint:  #78838f;
-  --rule:       #2b323b;
-  --rule-soft:  #232931;
+  --paper:      #262b31;
+  --surface:    #2e343b;
+  --surface-2:  #373e46;
+  --ink:        #eef0f2;
+  --ink-soft:   #bcc4cd;
+  --ink-faint:  #949da7;
+  --rule:       #434b55;
+  --rule-soft:  #383f48;
   --accent:     #7cc0dc;
   --accent-dim: rgba(124, 192, 220, 0.12);
   --gold:       #d3a765;
@@ -416,7 +416,7 @@ a {
     bottom: 1px;
     height: 3.25em;
     border-radius: 0 0 4px 4px;
-    background: linear-gradient(to bottom, rgba(25, 29, 36, 0), #191d24 85%);
+    background: linear-gradient(to bottom, rgba(46, 52, 59, 0), #2e343b 85%);
     pointer-events: none;
   }
 }
@@ -578,6 +578,34 @@ a {
 }
 
 .archive .abstract-toggle { color: var(--accent) !important; }
+
+/* --------------------------------------------------------------------------
+   CV viewer
+   -------------------------------------------------------------------------- */
+
+.cv-section { padding-top: 2.5em; }
+
+.cv-viewer {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+  height: min(84vh, 1150px);
+  min-height: 32rem;
+}
+
+.cv-viewer__frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.cv-note {
+  font-size: 0.82em;
+  color: var(--ink-faint);
+  margin: 0.9em 0 0;
+}
 
 /* --------------------------------------------------------------------------
    Responsive
