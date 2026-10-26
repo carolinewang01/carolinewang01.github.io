@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Caroline Wang"
   avatar           : "profile-caroline.jpg"
-  bio              : "Caroline is a Ph.D. student at University of Texas at Austin, researching reinforcement learning, multi-agent systems, and ad hoc teamwork."
-  location         : "Austin, Texas"
+  bio              : "Caroline is a Research Scientist on the multi-agent learning team at Google DeepMind, researching reinforcement learning, multi-agent systems, and ad hoc teamwork."
+  location         : "London, UK"
   employer         : ""
   # pubmed           : ""
   googlescholar    : "https://scholar.google.com/citations?user=Dr2oUPgAAAAJ&hl=en"

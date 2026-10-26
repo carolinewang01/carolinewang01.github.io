@@ -4,15 +4,16 @@ title: "Caroline Wang"
 excerpt: "About Caroline"
 layout: home
 author_profile: false
-role: "Ph.D. candidate in Computer Science, UT Austin &middot; advised by [Peter Stone](https://www.cs.utexas.edu/~pstone/)"
+role: "Research Scientist, Multi-Agent Learning team, Google DeepMind &middot; London"
 cv_url: /cv/
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a final year Computer Science Ph.D. student at UT Austin, supervised by
-[Peter Stone](https://www.cs.utexas.edu/~pstone/). I am fortunate to have previously interned at Google DeepMind, where I was hosted by [Pablo S. Castro](https://psc-g.github.io/), and at Sony AI, where I was hosted by [Varun Kompella](https://varunrajk.gitlab.io/).
+I am a Research Scientist on the multi-agent learning team at Google DeepMind in London.
+I completed my Computer Science Ph.D. at UT Austin, supervised by
+[Peter Stone](https://www.cs.utexas.edu/~pstone/). During my Ph.D., I was fortunate to intern at Google DeepMind, where I was hosted by [Pablo S. Castro](https://psc-g.github.io/), and at Sony AI, where I was hosted by [Varun Kompella](https://varunrajk.gitlab.io/).
 I'm currently motivated by a vision of AI agents that can work alongside humans---contributing to and benefiting from the collective knowledge and effort that drives human progress, unlocking new forms of collaboration that neither humans nor AI could achieve alone, and ensuring that such collaboration is steered by shared values.
 
 My PhD work pursues the above vision through the lens of multi-agent reinforcement learning: understanding cooperative dynamics in multi-agent settings, and designing algorithms to enable agents to coordinate with previously unseen teammates towards shared goals (ad hoc teamwork).
