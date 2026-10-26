@@ -69,7 +69,3 @@ Reinforcement learning algorithms enable AI agents to learn complex behaviors in
     </div>
   </li>
 </ol>
-
-<div class="pub__links">
-  <a href="{{ base_path }}/files/Wang_Dissertation_Publications.pdf">Download this list (PDF)</a>
-</div>
