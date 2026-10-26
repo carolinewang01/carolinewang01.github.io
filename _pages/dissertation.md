@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-Ph.D. dissertation, Department of Computer Science, The University of Texas at Austin, September 2026.
+Ph.D. dissertation, Department of Computer Science, The University of Texas at Austin.
 
 **Advisor:** Peter Stone<br>
 **Committee:** Peter Stone, Risto Miikkulainen, Elias Stengel-Eskin, Natasha Jaques<br>
