@@ -16,6 +16,7 @@ Ph.D. dissertation, Department of Computer Science, The University of Texas at A
 <!-- TODO: this is the 09-18-26 revision; replace with the revised final version when ready. -->
 <div class="pub__links">
   <a href="{{ base_path }}/files/papers/wang_dissertation_2026.pdf">Dissertation PDF</a>
+  <a href="{{ base_path }}/files/slides/wang_defense_slides_2026.pptx">Defense slides (PPTX)</a>
 </div>
 
 ## Abstract
@@ -26,17 +27,6 @@ Reinforcement learning algorithms enable AI agents to learn complex behaviors in
 
 <div class="embed-responsive">
   <iframe src="https://drive.google.com/file/d/1O1Y3t_6kHlDCF-Fredu9DLR88UONEPak/preview" title="Dissertation defense talk" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
-</div>
-
-## Defense Slides
-
-<!-- TODO: replace with the Google Slides "Publish to web" embed URL, e.g.
-<div class="embed-responsive">
-  <iframe src="https://docs.google.com/presentation/d/e/<PUBLISHED_ID>/embed?start=false&loop=false" title="Dissertation defense slides" allowfullscreen loading="lazy"></iframe>
-</div>
--->
-<div class="pub__links">
-  <a href="{{ base_path }}/files/slides/wang_defense_slides_2026.pptx">Download slides (PPTX, 93 MB)</a>
 </div>
 
 ## Publications Arising from the Dissertation
