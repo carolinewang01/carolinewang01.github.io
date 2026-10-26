@@ -524,6 +524,9 @@ a {
   margin-top: 0.25em;
 }
 
+/* Award line on the publications page, gold like the timeline */
+.archive__item .archive__item-award { color: var(--gold); }
+
 /* --------------------------------------------------------------------------
    Publications page (shares the card language)
    -------------------------------------------------------------------------- */
