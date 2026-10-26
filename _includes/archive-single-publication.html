@@ -38,6 +38,11 @@
       {{ title }}
     </h2>
 
+    <!-- print award -->
+    {% if post.award %}
+    <div><span class="pub__award">{{ post.award }}</span></div>
+    {% endif %}
+
 
 
     <!-- Buttons row -->
@@ -65,12 +70,6 @@
       {% endif %}
     </div>
 
-    <!-- print award -->
-    {% if post.award %}
-    <p class="archive__item-award" itemprop="description" style="margin-bottom:10px; padding-top:0;"> 
-      <i>{{ post.award }}</i>
-    </p>
-    {% endif %}
 
     <!-- print excerpt -->
     {% if post.excerpt and site.read_more != 'enabled' %}
