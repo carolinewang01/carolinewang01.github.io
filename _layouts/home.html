@@ -82,6 +82,7 @@ layout: default
 
           <div class="pub__links">
             {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+            {% if post.arxiv %}<a href="{{ post.arxiv }}">arXiv</a>{% endif %}
             {% if post.pdfurl %}<a href="{% if post.pdfurl contains '://' %}{{ post.pdfurl }}{% else %}{{ base_path }}{{ post.pdfurl }}{% endif %}">PDF</a>{% endif %}
             {% if post.code %}<a href="{{ post.code }}">Code</a>{% endif %}
             {% if post.website %}<a href="{{ post.website }}">Website</a>{% endif %}

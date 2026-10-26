@@ -45,6 +45,9 @@
       {% if post.paperurl %}
         <a href="{{ post.paperurl }}" class="btn btn--info">Link</a>
       {% endif %}
+      {% if post.arxiv %}
+        <a href="{{ post.arxiv }}" class="btn btn--info">arXiv</a>
+      {% endif %}
       {% if post.pdfurl %}
         <a href="{% if post.pdfurl contains '://' %}{{ post.pdfurl }}{% else %}{{ base_path }}{{ post.pdfurl }}{% endif %}" class="btn btn--info">Paper PDF</a>
       {% endif %}
