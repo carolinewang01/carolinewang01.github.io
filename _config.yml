@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Caroline Wang"
   avatar           : "profile-caroline.jpg"
-  bio              : "Caroline is a Research Scientist on the multi-agent learning team at Google DeepMind, researching reinforcement learning, multi-agent systems, and ad hoc teamwork."
+  bio              : "Caroline is a Research Scientist on the multi-agent learning team at Google DeepMind. Her PhD focused on reinforcement learning, multi-agent systems, and ad hoc teamwork."
   location         : "London, UK"
   employer         : ""
   # pubmed           : ""

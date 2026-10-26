@@ -4,14 +4,14 @@ title: "Caroline Wang"
 excerpt: "About Caroline"
 layout: home
 author_profile: false
-role: "Research Scientist, Multi-Agent Learning team, Google DeepMind &middot; London"
+role: "Research Scientist, Multi-Agent Learning team, Google DeepMind"
 cv_url: /cv/
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a Research Scientist on the multi-agent learning team at Google DeepMind in London.
+I am a Research Scientist on the multi-agent learning team at Google DeepMind.
 I completed my Computer Science Ph.D. at UT Austin, supervised by
 [Peter Stone](https://www.cs.utexas.edu/~pstone/). During my Ph.D., I was fortunate to intern at Google DeepMind, where I was hosted by [Pablo S. Castro](https://psc-g.github.io/), and at Sony AI, where I was hosted by [Varun Kompella](https://varunrajk.gitlab.io/).
 I'm currently motivated by a vision of AI agents that can work alongside humans---contributing to and benefiting from the collective knowledge and effort that drives human progress, unlocking new forms of collaboration that neither humans nor AI could achieve alone, and ensuring that such collaboration is steered by shared values.

@@ -12,6 +12,9 @@ layout: default
       <img src="{{ site.author.avatar | prepend: '/images/' | prepend: base_path }}"
            alt="{{ site.author.name }}" itemprop="image">
       <ul class="intro__contact">
+        {% if site.author.location %}
+        <li><i class="fas fa-fw fa-location-dot"></i>{{ site.author.location }}</li>
+        {% endif %}
         {% if site.author.email %}
         <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-fw fa-envelope"></i>Email</a></li>
         {% endif %}
