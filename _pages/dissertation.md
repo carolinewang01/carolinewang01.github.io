@@ -13,7 +13,10 @@ Ph.D. dissertation, Department of Computer Science, The University of Texas at A
 **Committee:** Peter Stone, Risto Miikkulainen, Elias Stengel-Eskin, Natasha Jaques<br>
 **Defended:** September 18, 2026
 
-<!-- TODO: link the final dissertation PDF once confirmed, e.g. [Dissertation PDF]({{ base_path }}/files/papers/wang_dissertation_2026.pdf) -->
+<!-- TODO: this is the 09-18-26 revision; replace with the revised final version when ready. -->
+<div class="pub__links">
+  <a href="{{ base_path }}/files/papers/wang_dissertation_2026.pdf">Dissertation PDF</a>
+</div>
 
 ## Abstract
 
@@ -38,10 +41,45 @@ Reinforcement learning algorithms enable AI agents to learn complex behaviors in
 
 ## Publications Arising from the Dissertation
 
-1. [D-Shape: Demonstration Shaped Reinforcement Learning]({{ base_path }}/publications/dshape). AAMAS 2023 (Ch. 3). [Paper](https://www.ifaamas.org/Proceedings/aamas2023/pdfs/p1267.pdf)
-2. [DM²: Distributed Multi-Agent Reinforcement Learning via Distribution Matching]({{ base_path }}/publications/dm2). AAAI 2023 (Ch. 4). [Paper](https://doi.org/10.1609/aaai.v37i10.26382)
-3. [N-Agent Ad Hoc Teamwork]({{ base_path }}/publications/naht). NeurIPS 2024 (Ch. 5). [Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/cabf611498431ad89a85ace75f790d93-Abstract-Conference.html)
-4. [ROTATE: Regret-driven Open-ended Training for Ad Hoc Teamwork]({{ base_path }}/publications/rotate). NeurIPS 2026, Spotlight (Ch. 6). [Paper](https://openreview.net/forum?id=h76k7u9S4o)
-5. [JaxAHT: A JAX-Based Library for Ad Hoc Teamwork]({{ base_path }}/publications/jaxaht). ICLR 2026 MALGAI Workshop (Ch. 7). [Paper](https://openreview.net/forum?id=DkZ2IEBpH1) · [Extended version](https://arxiv.org/abs/2609.13716) · [Code](https://github.com/LARG/jax-aht)
+<ol class="pub-list">
+  <li class="pub">
+    <div class="pub__venue">Ch. 3<span class="pub__year">AAMAS 2023</span></div>
+    <div class="pub__body">
+      <div class="pub__title"><a href="{{ base_path }}/publications/dshape">D-Shape: Demonstration Shaped Reinforcement Learning</a></div>
+      <div class="pub__links"><a href="https://www.ifaamas.org/Proceedings/aamas2023/pdfs/p1267.pdf">Paper</a> <a href="{{ base_path }}/publications/dshape">Details</a></div>
+    </div>
+  </li>
+  <li class="pub">
+    <div class="pub__venue">Ch. 4<span class="pub__year">AAAI 2023</span></div>
+    <div class="pub__body">
+      <div class="pub__title"><a href="{{ base_path }}/publications/dm2">DM²: Distributed Multi-Agent Reinforcement Learning via Distribution Matching</a></div>
+      <div class="pub__links"><a href="https://doi.org/10.1609/aaai.v37i10.26382">Paper</a> <a href="{{ base_path }}/publications/dm2">Details</a></div>
+    </div>
+  </li>
+  <li class="pub">
+    <div class="pub__venue">Ch. 5<span class="pub__year">NeurIPS 2024</span></div>
+    <div class="pub__body">
+      <div class="pub__title"><a href="{{ base_path }}/publications/naht">N-Agent Ad Hoc Teamwork</a></div>
+      <div class="pub__links"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/cabf611498431ad89a85ace75f790d93-Abstract-Conference.html">Paper</a> <a href="{{ base_path }}/publications/naht">Details</a></div>
+    </div>
+  </li>
+  <li class="pub">
+    <div class="pub__venue">Ch. 6<span class="pub__year">NeurIPS 2026</span></div>
+    <div class="pub__body">
+      <div class="pub__title"><a href="{{ base_path }}/publications/rotate">ROTATE: Regret-driven Open-ended Training for Ad Hoc Teamwork</a></div>
+      <span class="pub__award">Spotlight (top 2%)</span>
+      <div class="pub__links"><a href="https://openreview.net/forum?id=h76k7u9S4o">Paper</a> <a href="{{ base_path }}/publications/rotate">Details</a></div>
+    </div>
+  </li>
+  <li class="pub">
+    <div class="pub__venue">Ch. 7<span class="pub__year">ICLR 2026 MALGAI Workshop</span></div>
+    <div class="pub__body">
+      <div class="pub__title"><a href="{{ base_path }}/publications/jaxaht">JaxAHT: A JAX-Based Library for Ad Hoc Teamwork</a></div>
+      <div class="pub__links"><a href="https://openreview.net/forum?id=DkZ2IEBpH1">Paper</a> <a href="https://arxiv.org/abs/2609.13716">Extended version</a> <a href="https://github.com/LARG/jax-aht">Code</a> <a href="{{ base_path }}/publications/jaxaht">Details</a></div>
+    </div>
+  </li>
+</ol>
 
-[Download this list (PDF)]({{ base_path }}/files/Wang_Dissertation_Publications.pdf)
+<div class="pub__links">
+  <a href="{{ base_path }}/files/Wang_Dissertation_Publications.pdf">Download this list (PDF)</a>
+</div>
