@@ -41,7 +41,9 @@ layout: default
 
     <div class="intro__text">
       <h1 class="intro__name" itemprop="name">{{ site.author.name }}</h1>
+      {% if page.role %}
       <p class="intro__role">{{ page.role | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      {% endif %}
 
       {% if page.callout %}
       <p class="callout">{{ page.callout | markdownify | remove: '<p>' | remove: '</p>' }}</p>

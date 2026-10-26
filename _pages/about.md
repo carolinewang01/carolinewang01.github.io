@@ -4,7 +4,6 @@ title: "Caroline Wang"
 excerpt: "About Caroline"
 layout: home
 author_profile: false
-role: "Research Scientist, Multi-Agent Learning team, Google DeepMind"
 cv_url: /cv/
 redirect_from:
   - /about/
