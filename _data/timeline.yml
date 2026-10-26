@@ -57,6 +57,17 @@
 
 # --------------------------------------------------------------- position ---
 
+- date: 2026-10-01
+  kind: news
+  title: "Joined Google DeepMind as a Research Scientist"
+  text: "Started as a Research Scientist on the multi-agent learning team, and relocated to London for the role."
+
+- date: 2026-09-18
+  kind: news
+  title: "Completed my PhD at UT Austin"
+  text: "Defended my dissertation, Agents Learning With and From Other Agents, advised by Peter Stone."
+  link: "/dissertation/"
+
 - date: 2025-06-01
   kind: news
   title: "Student researcher at Google DeepMind"
