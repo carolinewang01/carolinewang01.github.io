@@ -35,9 +35,9 @@ Reinforcement learning algorithms enable AI agents to learn complex behaviors in
   <iframe src="https://docs.google.com/presentation/d/e/<PUBLISHED_ID>/embed?start=false&loop=false" title="Dissertation defense slides" allowfullscreen loading="lazy"></iframe>
 </div>
 -->
-<!-- TODO: add the slides PDF to files/slides/ and link it: [Download PDF]({{ base_path }}/files/slides/<FILE>.pdf) -->
-
-*Slides coming soon.*
+<div class="pub__links">
+  <a href="{{ base_path }}/files/slides/wang_defense_slides_2026.pptx">Download slides (PPTX, 93 MB)</a>
+</div>
 
 ## Publications Arising from the Dissertation
 
