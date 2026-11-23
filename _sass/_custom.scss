@@ -398,6 +398,64 @@ a {
 }
 
 /* --------------------------------------------------------------------------
+   Students
+   -------------------------------------------------------------------------- */
+
+.students__group {
+  font-family: $ui;
+  font-size: 0.76em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 1.6em 0 0.4em;
+
+  &:first-of-type { margin-top: 0; }
+}
+
+.student-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.student {
+  margin: 0;
+  padding: 0.8em 0;
+  border-bottom: 1px solid var(--rule-soft);
+
+  &:last-child { border-bottom: 0; }
+}
+
+.student__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0 1em;
+}
+
+.student__name {
+  font-family: $display;
+  font-size: 1.08em;
+  color: var(--ink);
+}
+
+.student__dates {
+  font-size: 0.78em;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+.student__role,
+.student__text {
+  font-size: 0.86em;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0.1em 0 0;
+}
+
+/* --------------------------------------------------------------------------
    Timeline
    -------------------------------------------------------------------------- */
 

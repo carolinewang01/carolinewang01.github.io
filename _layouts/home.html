@@ -60,6 +60,34 @@ layout: default
   {%- endcomment -%}
   {% assign pubs = site.publications | sort: 'date' | reverse %}
 
+  <!-- ===================== Students ===================== -->
+  <section class="home__section" id="students">
+    <div class="section__head">
+      <h2 class="section__title">Students Supervised</h2>
+    </div>
+
+    {% assign student_groups = "current:Current,alumni:Former" | split: ',' %}
+    {% for group in student_groups %}
+    {% assign group_parts = group | split: ':' %}
+    {% assign group_students = site.data.students | where: 'status', group_parts[0] %}
+    {% if group_students.size > 0 %}
+    <h3 class="students__group">{{ group_parts[1] }}</h3>
+    <ul class="student-list">
+      {% for s in group_students %}
+      <li class="student">
+        <div class="student__head">
+          <span class="student__name">{% if s.url %}<a href="{{ s.url }}">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}</span>
+          {% if s.dates %}<span class="student__dates">{{ s.dates }}</span>{% endif %}
+        </div>
+        <p class="student__role">{{ s.role }}</p>
+        {% if s.text %}<p class="student__text">{{ s.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endfor %}
+  </section>
+
   <!-- ===================== Timeline ===================== -->
   <section class="home__section" id="timeline">
     <div class="section__head">

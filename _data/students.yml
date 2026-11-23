@@ -1,0 +1,31 @@
+# Students listed on the home page, in the order they appear here.
+#
+# Fields:
+#   name   (required)  full name
+#   status (required)  current or alumni -- picks the group it renders under
+#   role   (required)  who they are, e.g. "PhD student, UT Austin"
+#   dates  (optional)  when you worked together
+#   text   (optional)  a sentence of context
+#   url    (optional)  personal website the name should point to
+
+- name: Lain Mustafaoglu
+  status: current
+  role: "PhD student, UT Austin"
+  dates: "Summer 2026 – present"
+
+- name: Johnny Liu
+  status: current
+  role: "Undergraduate, UT Austin"
+  dates: "2024 – present"
+  text: "Interned at Jane Street."
+
+- name: Montek Kundan
+  status: alumni
+  role: "Master's student, UT Austin"
+  dates: "Spring 2026 – Fall 2026"
+
+- name: Andrew McAlinden
+  status: alumni
+  role: "Undergraduate, UT Austin"
+  dates: "Spring 2026"
+  text: 'Supervised [honors thesis](https://arxiv.org/abs/2610.34799). Now at HRT.'
